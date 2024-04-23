@@ -10,6 +10,8 @@ sbatch sft_training_cp.sh
 ```sh
 docker pull alexht/nemo-aligner:debug
 ```
+base image: `nvcr.io/nvidia/pytorch:24.02-py3`
+
 - only support SM_70 (V100)
 
 **WANDB**
