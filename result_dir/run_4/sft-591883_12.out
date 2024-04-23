@@ -1,0 +1,176 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.02 (build 82611821)
+PyTorch Version 2.3.0a0+ebedce2
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+ERROR: This container was built for NVIDIA Driver Release 545.23 or later, but
+       version 470.161.03 was detected and compatibility mode is UNAVAILABLE.
+
+       [[]]
+
+gn1122:35564:35564 [4] NCCL INFO cudaDriverVersion 12030
+gn1122:35564:35564 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn1122:35564:35564 [4] NCCL INFO Bootstrap : Using ib0:10.100.11.22<0>
+gn1122:35564:35564 [4] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v7 symbol.
+gn1122:35564:35564 [4] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v6 (v6)
+gn1122:35564:35564 [4] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v7 symbol.
+gn1122:35564:35564 [4] NCCL INFO NET/Plugin: Loaded coll plugin SHARP (v6)
+gn1122:35564:16246 [4] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+gn1122:35564:16246 [4] NCCL INFO P2P plugin IBext
+gn1122:35564:16246 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn1122:35564:16246 [4] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB/SHARP [RO]; OOB ib0:10.100.11.22<0>
+gn1122:35564:16246 [4] NCCL INFO Using non-device net plugin version 0
+gn1122:35564:16246 [4] NCCL INFO Using network IBext
+gn1122:35564:16246 [4] NCCL INFO comm 0x55bd4f203120 rank 12 nranks 128 cudaDev 4 nvmlDev 4 busId b1000 commId 0xc30115f52475687c - Init START
+gn1122:35564:16246 [4] NCCL INFO Setting affinity for GPU 4 to 3c0000
+gn1122:35564:16246 [4] NCCL INFO NVLS multicast support is not available on dev 4
+gn1122:35564:16246 [4] NCCL INFO Trees [0] -1/-1/-1->12->15 [1] -1/-1/-1->12->15
+gn1122:35564:16246 [4] NCCL INFO P2P Chunksize set to 131072
+gn1122:35564:16246 [4] NCCL INFO Channel 00/0 : 12[4] -> 13[5] via P2P/CUMEM
+gn1122:35564:16246 [4] NCCL INFO Channel 01/0 : 12[4] -> 13[5] via P2P/CUMEM
+gn1122:35564:16246 [4] NCCL INFO Connected all rings
+gn1122:35564:16246 [4] NCCL INFO Channel 00/0 : 12[4] -> 15[7] via P2P/CUMEM
+gn1122:35564:16246 [4] NCCL INFO Channel 01/0 : 12[4] -> 15[7] via P2P/CUMEM
+gn1122:35564:16246 [4] NCCL INFO Connected all trees
+gn1122:35564:16246 [4] NCCL INFO threadThresholds 8/8/64 | 1024/8/64 | 512 | 512
+gn1122:35564:16246 [4] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1122:35564:16246 [4] NCCL INFO Channel 00/1 : 12[4] -> 8[0] via P2P/indirect/14[6]
+gn1122:35564:16246 [4] NCCL INFO Channel 01/1 : 12[4] -> 8[0] via P2P/indirect/14[6]
+gn1122:35564:16246 [4] NCCL INFO Channel 00/1 : 12[4] -> 9[1] via P2P/indirect/15[7]
+gn1122:35564:16246 [4] NCCL INFO Channel 01/1 : 12[4] -> 9[1] via P2P/indirect/15[7]
+gn1122:35564:16246 [4] NCCL INFO Channel 00/1 : 12[4] -> 11[3] via P2P/indirect/10[2]
+gn1122:35564:16246 [4] NCCL INFO Channel 01/1 : 12[4] -> 11[3] via P2P/indirect/10[2]
+gn1122:35564:16246 [4] NCCL INFO comm 0x55bd4f203120 rank 12 nranks 128 cudaDev 4 nvmlDev 4 busId b1000 commId 0xc30115f52475687c - Init COMPLETE
+gn1122:35564:22593 [4] NCCL INFO Using non-device net plugin version 0
+gn1122:35564:22593 [4] NCCL INFO Using network IBext
+gn1122:35564:22593 [4] NCCL INFO comm 0x55bd51d024f0 rank 4 nranks 32 cudaDev 4 nvmlDev 4 busId b1000 commId 0x5915742a62b60c1a - Init START
+gn1122:35564:22593 [4] NCCL INFO Setting affinity for GPU 4 to 3c0000
+gn1122:35564:22593 [4] NCCL INFO NVLS multicast support is not available on dev 4
+gn1122:35564:22593 [4] NCCL INFO Trees [0] -1/-1/-1->4->7 [1] -1/-1/-1->4->7
+gn1122:35564:22593 [4] NCCL INFO P2P Chunksize set to 131072
+gn1122:35564:22593 [4] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:22593 [4] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:22593 [4] NCCL INFO Connected all rings
+gn1122:35564:22593 [4] NCCL INFO Channel 00/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:22593 [4] NCCL INFO Channel 01/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:22593 [4] NCCL INFO Connected all trees
+gn1122:35564:22593 [4] NCCL INFO threadThresholds 8/8/64 | 256/8/64 | 512 | 512
+gn1122:35564:22593 [4] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1122:35564:22593 [4] NCCL INFO Channel 00/1 : 4[4] -> 0[0] via P2P/indirect/6[6]
+gn1122:35564:22593 [4] NCCL INFO Channel 01/1 : 4[4] -> 0[0] via P2P/indirect/6[6]
+gn1122:35564:22593 [4] NCCL INFO Channel 00/1 : 4[4] -> 1[1] via P2P/indirect/7[7]
+gn1122:35564:22593 [4] NCCL INFO Channel 01/1 : 4[4] -> 1[1] via P2P/indirect/7[7]
+gn1122:35564:22593 [4] NCCL INFO Channel 00/1 : 4[4] -> 3[3] via P2P/indirect/2[2]
+gn1122:35564:22593 [4] NCCL INFO Channel 01/1 : 4[4] -> 3[3] via P2P/indirect/2[2]
+gn1122:35564:22593 [4] NCCL INFO comm 0x55bd51d024f0 rank 4 nranks 32 cudaDev 4 nvmlDev 4 busId b1000 commId 0x5915742a62b60c1a - Init COMPLETE
+gn1122:35564:23008 [4] NCCL INFO Using non-device net plugin version 0
+gn1122:35564:23008 [4] NCCL INFO Using network IBext
+gn1122:35564:23008 [4] NCCL INFO comm 0x55bd5c308c90 rank 4 nranks 8 cudaDev 4 nvmlDev 4 busId b1000 commId 0x7e6e010fbc1ccc46 - Init START
+gn1122:35564:23008 [4] NCCL INFO Setting affinity for GPU 4 to 3c0000
+gn1122:35564:23008 [4] NCCL INFO NVLS multicast support is not available on dev 4
+gn1122:35564:23008 [4] NCCL INFO Trees [0] 5/-1/-1->4->7 [1] 5/-1/-1->4->7 [2] 7/-1/-1->4->5 [3] 7/-1/-1->4->5 [4] 2/-1/-1->4->6 [5] 6/-1/-1->4->2 [6] 5/-1/-1->4->7 [7] 5/-1/-1->4->7 [8] 7/-1/-1->4->5 [9] 7/-1/-1->4->5 [10] 2/-1/-1->4->6 [11] 6/-1/-1->4->2
+gn1122:35564:23008 [4] NCCL INFO P2P Chunksize set to 524288
+gn1122:35564:23008 [4] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 06/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 07/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 05/0 : 4[4] -> 6[6] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 11/0 : 4[4] -> 6[6] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 02/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 03/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 08/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 09/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 04/0 : 4[4] -> 2[2] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 10/0 : 4[4] -> 2[2] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Connected all rings
+gn1122:35564:23008 [4] NCCL INFO Channel 02/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 03/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 08/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 09/0 : 4[4] -> 5[5] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 04/0 : 4[4] -> 6[6] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 10/0 : 4[4] -> 6[6] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 00/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 01/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 06/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 07/0 : 4[4] -> 7[7] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 05/0 : 4[4] -> 2[2] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Channel 11/0 : 4[4] -> 2[2] via P2P/CUMEM
+gn1122:35564:23008 [4] NCCL INFO Connected all trees
+gn1122:35564:23008 [4] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gn1122:35564:23008 [4] NCCL INFO 12 coll channels, 0 nvls channels, 16 p2p channels, 2 p2p channels per peer
+gn1122:35564:23008 [4] NCCL INFO Channel 02/1 : 4[4] -> 0[0] via P2P/indirect/6[6]
+gn1122:35564:23008 [4] NCCL INFO Channel 03/1 : 4[4] -> 0[0] via P2P/indirect/6[6]
+gn1122:35564:23008 [4] NCCL INFO Channel 10/1 : 4[4] -> 1[1] via P2P/indirect/7[7]
+gn1122:35564:23008 [4] NCCL INFO Channel 11/1 : 4[4] -> 1[1] via P2P/indirect/7[7]
+gn1122:35564:23008 [4] NCCL INFO Channel 14/1 : 4[4] -> 3[3] via P2P/indirect/2[2]
+gn1122:35564:23008 [4] NCCL INFO Channel 15/1 : 4[4] -> 3[3] via P2P/indirect/2[2]
+gn1122:35564:23008 [4] NCCL INFO comm 0x55bd5c308c90 rank 4 nranks 8 cudaDev 4 nvmlDev 4 busId b1000 commId 0x7e6e010fbc1ccc46 - Init COMPLETE
+NCCL version 2.19.4+cuda12.3
+gn1122:35564:23866 [4] NCCL INFO Using non-device net plugin version 0
+gn1122:35564:23866 [4] NCCL INFO Using network IBext
+gn1122:35564:23866 [4] NCCL INFO comm 0x55bd6206fea0 rank 0 nranks 4 cudaDev 4 nvmlDev 4 busId b1000 commId 0xaace3332b0c5595b - Init START
+gn1122:35564:23866 [4] NCCL INFO Setting affinity for GPU 4 to 3c0000
+gn1122:35564:23866 [4] NCCL INFO Channel 00/02 :    0   1   2   3
+gn1122:35564:23866 [4] NCCL INFO Channel 01/02 :    0   1   2   3
+gn1122:35564:23866 [4] NCCL INFO Trees [0] 2/-1/-1->0->-1 [1] -1/-1/-1->0->1
+gn1122:35564:23866 [4] NCCL INFO P2P Chunksize set to 131072
+gn1122:35564:23866 [4] NCCL INFO Channel 00/0 : 3[4] -> 0[4] [receive] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Channel 01/0 : 3[4] -> 0[4] [receive] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Channel 00/0 : 0[4] -> 1[4] [send] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Channel 01/0 : 0[4] -> 1[4] [send] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Connected all rings
+gn1122:35564:23866 [4] NCCL INFO Channel 00/0 : 2[4] -> 0[4] [receive] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Channel 00/0 : 0[4] -> 2[4] [send] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Channel 01/0 : 1[4] -> 0[4] [receive] via NET/IBext/0
+gn1122:35564:23866 [4] NCCL INFO Connected all trees
+gn1122:35564:23866 [4] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gn1122:35564:23866 [4] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1122:35564:23866 [4] NCCL INFO comm 0x55bd6206fea0 rank 0 nranks 4 cudaDev 4 nvmlDev 4 busId b1000 commId 0xaace3332b0c5595b - Init COMPLETE
+gn1122:35564:23945 [4] NCCL INFO Channel 00/1 : 0[4] -> 1[4] [send] via NET/IBext/0/Shared
+gn1122:35564:23945 [4] NCCL INFO Channel 01/1 : 0[4] -> 1[4] [send] via NET/IBext/0/Shared
+gn1122:35564:24004 [4] NCCL INFO Channel 00/1 : 1[4] -> 0[4] [receive] via NET/IBext/0/Shared
+gn1122:35564:24004 [4] NCCL INFO Channel 01/1 : 1[4] -> 0[4] [receive] via NET/IBext/0/Shared
+gn1122:35564:27020 [4] NCCL INFO Using non-device net plugin version 0
+gn1122:35564:27020 [4] NCCL INFO Using network IBext
+gn1122:35564:27020 [4] NCCL INFO comm 0x2ae483c97ec0 rank 1 nranks 4 cudaDev 4 nvmlDev 4 busId b1000 commId 0x92d094cf814b36a6 - Init START
+gn1122:35564:27020 [4] NCCL INFO Setting affinity for GPU 4 to 3c0000
+gn1122:35564:27020 [4] NCCL INFO Trees [0] -1/-1/-1->1->2 [1] 2/0/-1->1->3
+gn1122:35564:27020 [4] NCCL INFO P2P Chunksize set to 131072
+gn1122:35564:27020 [4] NCCL INFO Channel 00/0 : 0[4] -> 1[4] [receive] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 0[4] -> 1[4] [receive] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 00/0 : 1[4] -> 2[4] [send] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 1[4] -> 2[4] [send] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Connected all rings
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 3[4] -> 1[4] [receive] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 1[4] -> 3[4] [send] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 00/0 : 2[4] -> 1[4] [receive] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 2[4] -> 1[4] [receive] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Channel 01/0 : 1[4] -> 0[4] [send] via NET/IBext/0
+gn1122:35564:27020 [4] NCCL INFO Connected all trees
+gn1122:35564:27020 [4] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gn1122:35564:27020 [4] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1122:35564:27020 [4] NCCL INFO comm 0x2ae483c97ec0 rank 1 nranks 4 cudaDev 4 nvmlDev 4 busId b1000 commId 0x92d094cf814b36a6 - Init COMPLETE
+gn1122:35564:22605 [4] NCCL INFO [Service thread] Connection closed by localRank 7
+gn1122:35564:22605 [4] NCCL INFO [Service thread] Connection closed by localRank 6

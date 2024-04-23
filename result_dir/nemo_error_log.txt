@@ -1,0 +1,67 @@
+[NeMo W 2024-04-23 09:20:34 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+    See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+      ret = run_job(
+    
+[NeMo E 2024-04-23 09:20:34 exp_manager:556] You are running multi-node training without SLURM handling the processes. Please note that this is not tested in NeMo and could result in errors.
+[NeMo W 2024-04-23 09:20:34 exp_manager:694] Exp_manager is logging to /home/u9824269/LLM/llama3/train/result_dir, but it already exists.
+[NeMo W 2024-04-23 09:20:34 exp_manager:616] There were no checkpoints found in checkpoint_dir or no checkpoint folder at checkpoint_dir :/home/u9824269/LLM/llama3/train/result_dir/checkpoints. Training from scratch.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:32 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: add_qkv_bias in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: num_moe_experts in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: rotary_interleaved in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: window_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: memory_efficient_layer_norm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: fp8_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: clone_scatter_output_in_embedding in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_router_load_balancing_type in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_router_topk in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_grouped_gemm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_aux_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_z_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_input_jitter_eps in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:32:33 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_token_dropping in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:47:58 experimental:26] `<class 'nemo.collections.nlp.data.language_modeling.megatron.megatron_batch_samplers.MegatronPretrainingRandomBatchSampler'>` is experimental and not ready for production yet. Use at your own risk.

@@ -1,0 +1,164 @@
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.161.03
+[NeMo W 2024-04-23 09:19:04 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+    See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+      ret = run_job(
+    
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[NeMo E 2024-04-23 09:19:04 exp_manager:556] You are running multi-node training without SLURM handling the processes. Please note that this is not tested in NeMo and could result in errors.
+[NeMo W 2024-04-23 09:19:04 exp_manager:694] Exp_manager is logging to /home/u9824269/LLM/llama3/train/result_dir, but it already exists.
+[NeMo W 2024-04-23 09:19:04 exp_manager:616] There were no checkpoints found in checkpoint_dir or no checkpoint folder at checkpoint_dir :/home/u9824269/LLM/llama3/train/result_dir/checkpoints. Training from scratch.
+wandb: Currently logged in as: alex-ht. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /home/u9824269/LLM/llama3/train/result_dir/wandb/run-20240423_091906-iflot5yy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dolly_sft_run_tp8_no_cp
+wandb: ⭐️ View project at https://wandb.ai/alex-ht/llama3-cp-debug
+wandb: 🚀 View run at https://wandb.ai/alex-ht/llama3-cp-debug/runs/iflot5yy
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+24-04-23 09:27:03 - PID:28721 - rank:(0, 0, 0, 0) - microbatches.py:39 - INFO - setting number of micro-batches to constant 2
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:03 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:1109] The model: GPTSFTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: add_qkv_bias in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: num_moe_experts in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: rotary_interleaved in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: window_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: memory_efficient_layer_norm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: fp8_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: clone_scatter_output_in_embedding in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_router_load_balancing_type in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_router_topk in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_grouped_gemm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_aux_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_z_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_input_jitter_eps in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 09:27:04 megatron_base_model:516] The model: GPTSFTModel() does not have field.name: moe_token_dropping in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/128
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 128 processes
+----------------------------------------------------------------------------------------------------
+
+[NeMo W 2024-04-23 09:42:26 experimental:26] `<class 'nemo.collections.nlp.data.language_modeling.megatron.megatron_batch_samplers.MegatronPretrainingRandomBatchSampler'>` is experimental and not ready for production yet. Use at your own risk.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+
+  | Name  | Type          | Params
+----------------------------------------
+0 | model | Float16Module | 2.3 B 
+----------------------------------------
+2.3 B     Trainable params
+0         Non-trainable params
+2.3 B     Total params
+9,086.173 Total estimated model params size (MB)
+Training steps:   0%|          | 0/1876 [00:00<?, ?it/s][NeMo W 2024-04-23 09:44:09 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py:2848: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+      warnings.warn(
+    
+Training steps:   0%|          | 0/1876 [01:55<?, ?it/s, train_grad_norm=nan, train_lr=0, train_loss=1.57, train_consumed_samples=8, train_step_time=115, train_epoch=1]Training steps:   0%|          | 1/1876 [01:55<60:20:41, 115.86s/it, train_grad_norm=nan, train_lr=0, train_loss=1.57, train_consumed_samples=8, train_step_time=115, train_epoch=1]Training steps:   0%|          | 1/1876 [02:37<60:20:41, 115.86s/it, train_grad_norm=nan, train_lr=5e-7, train_loss=1.44, train_consumed_samples=16, train_step_time=41.2, train_epoch=1]Training steps:   0%|          | 2/1876 [02:37<37:38:46, 72.32s/it, train_grad_norm=nan, train_lr=5e-7, train_loss=1.44, train_consumed_samples=16, train_step_time=41.2, train_epoch=1] Training steps:   0%|          | 2/1876 [03:18<37:38:46, 72.32s/it, train_grad_norm=nan, train_lr=1e-6, train_loss=1.3, train_consumed_samples=24, train_step_time=40.9, train_epoch=1] Training steps:   0%|          | 3/1876 [03:18<30:12:51, 58.07s/it, train_grad_norm=nan, train_lr=1e-6, train_loss=1.3, train_consumed_samples=24, train_step_time=40.9, train_epoch=1]Training steps:   0%|          | 3/1876 [04:00<30:12:51, 58.07s/it, train_grad_norm=nan, train_lr=1.5e-6, train_loss=2.57, train_consumed_samples=32, train_step_time=41.8, train_epoch=1]Training steps:   0%|          | 4/1876 [04:00<26:52:32, 51.68s/it, train_grad_norm=nan, train_lr=1.5e-6, train_loss=2.57, train_consumed_samples=32, train_step_time=41.8, train_epoch=1]Training steps:   0%|          | 4/1876 [04:42<26:52:32, 51.68s/it, train_grad_norm=nan, train_lr=2e-6, train_loss=1.76, train_consumed_samples=40, train_step_time=41.4, train_epoch=1]  Training steps:   0%|          | 5/1876 [04:42<25:00:23, 48.12s/it, train_grad_norm=nan, train_lr=2e-6, train_loss=1.76, train_consumed_samples=40, train_step_time=41.4, train_epoch=1]Training steps:   0%|          | 5/1876 [05:24<25:00:23, 48.12s/it, train_grad_norm=nan, train_lr=2.5e-6, train_loss=1.84, train_consumed_samples=48, train_step_time=42.3, train_epoch=1]Training steps:   0%|          | 6/1876 [05:24<23:58:36, 46.16s/it, train_grad_norm=nan, train_lr=2.5e-6, train_loss=1.84, train_consumed_samples=48, train_step_time=42.3, train_epoch=1]Training steps:   0%|          | 6/1876 [06:06<23:58:36, 46.16s/it, train_grad_norm=nan, train_lr=3e-6, train_loss=1.87, train_consumed_samples=56, train_step_time=41.4, train_epoch=1]  Training steps:   0%|          | 7/1876 [06:06<23:09:59, 44.62s/it, train_grad_norm=nan, train_lr=3e-6, train_loss=1.87, train_consumed_samples=56, train_step_time=41.4, train_epoch=1]Training steps:   0%|          | 7/1876 [06:47<23:09:59, 44.62s/it, train_grad_norm=nan, train_lr=3.5e-6, train_loss=1.22, train_consumed_samples=64, train_step_time=40.6, train_epoch=1]Training steps:   0%|          | 8/1876 [06:47<22:34:47, 43.52s/it, train_grad_norm=nan, train_lr=3.5e-6, train_loss=1.22, train_consumed_samples=64, train_step_time=40.6, train_epoch=1]Training steps:   0%|          | 8/1876 [07:28<22:34:47, 43.52s/it, train_grad_norm=nan, train_lr=4e-6, train_loss=1.46, train_consumed_samples=72, train_step_time=40.4, train_epoch=1]  Training steps:   0%|          | 9/1876 [07:28<22:07:59, 42.68s/it, train_grad_norm=nan, train_lr=4e-6, train_loss=1.46, train_consumed_samples=72, train_step_time=40.4, train_epoch=1]Training steps:   0%|          | 9/1876 [08:09<22:07:59, 42.68s/it, train_grad_norm=nan, train_lr=4.5e-6, train_loss=1.37, train_consumed_samples=80, train_step_time=40.9, train_epoch=1]Training steps:   1%|          | 10/1876 [08:09<21:55:38, 42.30s/it, train_grad_norm=nan, train_lr=4.5e-6, train_loss=1.37, train_consumed_samples=80, train_step_time=40.9, train_epoch=1]Training steps:   1%|          | 10/1876 [08:50<21:55:38, 42.30s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.75, train_consumed_samples=88, train_step_time=40.3, train_epoch=1]  Training steps:   1%|          | 11/1876 [08:50<21:41:46, 41.88s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.75, train_consumed_samples=88, train_step_time=40.3, train_epoch=1]
+Validation steps:   0%|          | 0/1 [00:00<?, ?it/s][A[NeMo W 2024-04-23 09:52:22 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/apex/transformer/pipeline_parallel/utils.py:81: UserWarning: This function is only for unittest
+      warnings.warn("This function is only for unittest")
+    
+
+Validation steps:   0%|          | 0/1 [01:21<?, ?it/s, val_loss=1.64, val_validation_step_time=68][A
+Validation steps: 100%|██████████| 1/1 [01:21<00:00, 81.94s/it, val_loss=1.64, val_validation_step_time=68][AValidation steps: 100%|██████████| 1/1 [01:21<00:00, 81.95s/it, val_loss=1.64, val_validation_step_time=68]
+Training steps:   1%|          | 11/1876 [10:52<21:41:46, 41.88s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.92, train_consumed_samples=96, train_step_time=39.6, train_epoch=1, val_loss=1.64, val_validation_step_time=68][NeMo W 2024-04-23 09:53:30 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:359: UserWarning: `ModelCheckpoint(monitor='validation_loss')` could not find the monitored key in the returned metrics: ['step', 'consumed_samples', 'epoch', 'train_grad_norm', 'train_lr', 'train_loss', 'train_consumed_samples', 'train_step_time', 'train_epoch', 'val_loss', 'val_validation_step_time']. HINT: Did you call `log('validation_loss', value)` in the `LightningModule`?
+      warning_cache.warn(m)
+    
+Epoch 0, global step 12: 'validation_loss' was not in top 5
+Training steps:   1%|          | 11/1876 [12:29<35:18:41, 68.16s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.92, train_consumed_samples=96, train_step_time=39.6, train_epoch=1, val_loss=1.64, val_validation_step_time=68]
+Error executing job with overrides: ['trainer.precision=16-mixed', 'trainer.num_nodes=16', 'trainer.devices=-1', 'trainer.sft.limit_val_batches=1', 'trainer.sft.val_check_interval=12', 'trainer.sft.save_interval=12', 'model.megatron_amp_O2=True', 'model.restore_from_path=/home/u9824269/LLM/llama3/train/llama3-70b-16-mixed.nemo', 'model.optim.lr=5e-6', 'model.optim.name=distributed_fused_adam', 'model.answer_only_loss=True', 'model.data.num_workers=0', 'model.data.train_ds.micro_batch_size=1', 'model.data.train_ds.global_batch_size=8', 'model.data.train_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl', 'model.data.train_ds.max_seq_length=8192', 'model.data.train_ds.add_eos=True', 'model.data.train_ds.add_bos=True', 'model.data.validation_ds.max_seq_length=8192', 'model.data.validation_ds.micro_batch_size=1', 'model.data.validation_ds.global_batch_size=128', 'model.data.validation_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl', 'model.data.validation_ds.add_bos=True', 'model.data.validation_ds.add_eos=True', 'model.tensor_model_parallel_size=8', 'model.pipeline_model_parallel_size=4', 'model.sequence_parallel=True', 'model.activations_checkpoint_granularity=selective', 'model.activations_checkpoint_method=uniform', '+model.context_parallel_size=1', 'exp_manager.create_wandb_logger=True', 'exp_manager.explicit_log_dir=/home/u9824269/LLM/llama3/train/result_dir', 'exp_manager.wandb_logger_kwargs.project=llama3-cp-debug', 'exp_manager.wandb_logger_kwargs.name=dolly_sft_run_tp8_no_cp', 'exp_manager.resume_if_exists=True', 'exp_manager.resume_ignore_no_checkpoint=True', 'exp_manager.create_checkpoint_callback=True', 'exp_manager.checkpoint_callback_params.save_nemo_on_train_end=True', 'exp_manager.checkpoint_callback_params.monitor=validation_loss']
+Traceback (most recent call last):
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py", line 244, in <module>
+    main()
+  File "/opt/NeMo/nemo/core/config/hydra_runner.py", line 129, in wrapper
+    _run_hydra(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/usr/local/lib/python3.10/dist-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/usr/local/lib/python3.10/dist-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py", line 240, in main
+    sft_trainer.fit()
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/algorithms/supervised.py", line 225, in fit
+    self.save(metrics, is_train_end=is_train_end)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/algorithms/supervised.py", line 245, in save
+    self.ckpt_callback.custom_save(monitor_candidates=monitor_candidates, is_train_end=is_train_end)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/utils/utils.py", line 62, in custom_save_ckpt_func
+    super(NeMoModelCheckpoint, self)._save_last_checkpoint(trainer, monitor_candidates)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py", line 654, in _save_last_checkpoint
+    self._save_checkpoint(trainer, filepath)
+  File "/opt/NeMo/nemo/utils/callbacks/nemo_model_checkpoint.py", line 273, in _save_checkpoint
+    super()._save_checkpoint(trainer, filepath)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py", line 365, in _save_checkpoint
+    trainer.save_checkpoint(filepath, self.save_weights_only)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1316, in save_checkpoint
+    self._checkpoint_connector.save_checkpoint(filepath, weights_only=weights_only, storage_options=storage_options)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 506, in save_checkpoint
+    _checkpoint = self.dump_checkpoint(weights_only)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 462, in dump_checkpoint
+    prec_plugin_state_dict = prec_plugin.state_dict()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/plugins/precision/amp.py", line 123, in state_dict
+    return self.scaler.state_dict()
+  File "/opt/NeMo/nemo/collections/nlp/parts/nlp_overrides.py", line 1308, in state_dict
+    "_hysteresis_tracker": self._hysteresis_tracker,
+AttributeError: 'GradScaler' object has no attribute '_hysteresis_tracker'
+slurmstepd: error: *** STEP 591883.0 ON gn1101 CANCELLED AT 2024-04-23T09:55:07 ***
+wandb: - 0.007 MB of 0.007 MB uploaded/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

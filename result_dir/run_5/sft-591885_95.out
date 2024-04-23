@@ -1,0 +1,91 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.02 (build 82611821)
+PyTorch Version 2.3.0a0+ebedce2
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+ERROR: This container was built for NVIDIA Driver Release 545.23 or later, but
+       version 470.161.03 was detected and compatibility mode is UNAVAILABLE.
+
+       [[]]
+
+gn0716:20983:20983 [7] NCCL INFO cudaDriverVersion 12030
+gn0716:20983:20983 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn0716:20983:20983 [7] NCCL INFO Bootstrap : Using ib0:10.100.7.16<0>
+gn0716:20983:20983 [7] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v7 symbol.
+gn0716:20983:20983 [7] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v6 (v6)
+gn0716:20983:20983 [7] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v7 symbol.
+gn0716:20983:20983 [7] NCCL INFO NET/Plugin: Loaded coll plugin SHARP (v6)
+gn0716:20983:1327 [7] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+gn0716:20983:1327 [7] NCCL INFO P2P plugin IBext
+gn0716:20983:1327 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn0716:20983:1327 [7] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB/SHARP [RO]; OOB ib0:10.100.7.16<0>
+gn0716:20983:1327 [7] NCCL INFO Using non-device net plugin version 0
+gn0716:20983:1327 [7] NCCL INFO Using network IBext
+gn0716:20983:1327 [7] NCCL INFO comm 0x563b4c1adf70 rank 95 nranks 128 cudaDev 7 nvmlDev 7 busId dc000 commId 0x3a10407dea0f6e61 - Init START
+gn0716:20983:1327 [7] NCCL INFO Setting affinity for GPU 7 to 3c0000
+gn0716:20983:1327 [7] NCCL INFO NVLS multicast support is not available on dev 7
+gn0716:20983:1327 [7] NCCL INFO Trees [0] 92/-1/-1->95->94 [1] 92/-1/-1->95->94
+gn0716:20983:1327 [7] NCCL INFO P2P Chunksize set to 131072
+gn0716:20983:1327 [7] NCCL INFO Channel 00/0 : 95[7] -> 89[1] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Channel 01/0 : 95[7] -> 89[1] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Connected all rings
+gn0716:20983:1327 [7] NCCL INFO Channel 00/0 : 95[7] -> 92[4] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Channel 01/0 : 95[7] -> 92[4] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Channel 00/0 : 95[7] -> 94[6] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Channel 01/0 : 95[7] -> 94[6] via P2P/CUMEM
+gn0716:20983:1327 [7] NCCL INFO Connected all trees
+gn0716:20983:1327 [7] NCCL INFO threadThresholds 8/8/64 | 1024/8/64 | 512 | 512
+gn0716:20983:1327 [7] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn0716:20983:1327 [7] NCCL INFO Channel 00/1 : 95[7] -> 88[0] via P2P/indirect/94[6]
+gn0716:20983:1327 [7] NCCL INFO Channel 01/1 : 95[7] -> 88[0] via P2P/indirect/94[6]
+gn0716:20983:1327 [7] NCCL INFO Channel 00/1 : 95[7] -> 90[2] via P2P/indirect/89[1]
+gn0716:20983:1327 [7] NCCL INFO Channel 01/1 : 95[7] -> 90[2] via P2P/indirect/89[1]
+gn0716:20983:1327 [7] NCCL INFO Channel 00/1 : 95[7] -> 91[3] via P2P/indirect/89[1]
+gn0716:20983:1327 [7] NCCL INFO Channel 01/1 : 95[7] -> 91[3] via P2P/indirect/89[1]
+gn0716:20983:1327 [7] NCCL INFO comm 0x563b4c1adf70 rank 95 nranks 128 cudaDev 7 nvmlDev 7 busId dc000 commId 0x3a10407dea0f6e61 - Init COMPLETE
+gn0716:20983:18353 [7] NCCL INFO Using non-device net plugin version 0
+gn0716:20983:18353 [7] NCCL INFO Using network IBext
+gn0716:20983:18353 [7] NCCL INFO comm 0x563b4ecb4760 rank 23 nranks 32 cudaDev 7 nvmlDev 7 busId dc000 commId 0x9fb5bf95114364b1 - Init START
+gn0716:20983:18353 [7] NCCL INFO Setting affinity for GPU 7 to 3c0000
+gn0716:20983:18353 [7] NCCL INFO NVLS multicast support is not available on dev 7
+gn0716:20983:18353 [7] NCCL INFO Trees [0] 20/-1/-1->23->22 [1] 20/-1/-1->23->22
+gn0716:20983:18353 [7] NCCL INFO P2P Chunksize set to 131072
+gn0716:20983:18353 [7] NCCL INFO Channel 00/0 : 23[7] -> 17[1] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Channel 01/0 : 23[7] -> 17[1] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Connected all rings
+gn0716:20983:18353 [7] NCCL INFO Channel 00/0 : 23[7] -> 20[4] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Channel 01/0 : 23[7] -> 20[4] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Channel 00/0 : 23[7] -> 22[6] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Channel 01/0 : 23[7] -> 22[6] via P2P/CUMEM
+gn0716:20983:18353 [7] NCCL INFO Connected all trees
+gn0716:20983:18353 [7] NCCL INFO threadThresholds 8/8/64 | 256/8/64 | 512 | 512
+gn0716:20983:18353 [7] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn0716:20983:18353 [7] NCCL INFO Channel 00/1 : 23[7] -> 16[0] via P2P/indirect/22[6]
+gn0716:20983:18353 [7] NCCL INFO Channel 01/1 : 23[7] -> 16[0] via P2P/indirect/22[6]
+gn0716:20983:18353 [7] NCCL INFO Channel 00/1 : 23[7] -> 18[2] via P2P/indirect/17[1]
+gn0716:20983:18353 [7] NCCL INFO Channel 01/1 : 23[7] -> 18[2] via P2P/indirect/17[1]
+gn0716:20983:18353 [7] NCCL INFO Channel 00/1 : 23[7] -> 19[3] via P2P/indirect/17[1]
+gn0716:20983:18353 [7] NCCL INFO Channel 01/1 : 23[7] -> 19[3] via P2P/indirect/17[1]
+gn0716:20983:18353 [7] NCCL INFO comm 0x563b4ecb4760 rank 23 nranks 32 cudaDev 7 nvmlDev 7 busId dc000 commId 0x9fb5bf95114364b1 - Init COMPLETE

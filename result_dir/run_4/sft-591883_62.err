@@ -1,0 +1,58 @@
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.161.03
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Initializing distributed: GLOBAL_RANK: 62, MEMBER: 63/128
+LOCAL_RANK: 6 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Training steps:   0%|          | 0/1876 [00:00<?, ?it/s]Training steps:   0%|          | 0/1876 [01:59<?, ?it/s, train_grad_norm=nan, train_lr=0, train_loss=1.57, train_consumed_samples=8, train_step_time=115, train_epoch=1]Training steps:   0%|          | 1/1876 [01:59<62:17:35, 119.60s/it, train_grad_norm=nan, train_lr=0, train_loss=1.57, train_consumed_samples=8, train_step_time=115, train_epoch=1]Training steps:   0%|          | 1/1876 [02:40<62:17:35, 119.60s/it, train_grad_norm=nan, train_lr=5e-7, train_loss=1.44, train_consumed_samples=16, train_step_time=38.3, train_epoch=1]Training steps:   0%|          | 2/1876 [02:40<38:10:52, 73.35s/it, train_grad_norm=nan, train_lr=5e-7, train_loss=1.44, train_consumed_samples=16, train_step_time=38.3, train_epoch=1] Training steps:   0%|          | 2/1876 [03:21<38:10:52, 73.35s/it, train_grad_norm=nan, train_lr=1e-6, train_loss=1.3, train_consumed_samples=24, train_step_time=38.3, train_epoch=1] Training steps:   0%|          | 3/1876 [03:21<30:29:38, 58.61s/it, train_grad_norm=nan, train_lr=1e-6, train_loss=1.3, train_consumed_samples=24, train_step_time=38.3, train_epoch=1]Training steps:   0%|          | 3/1876 [04:03<30:29:38, 58.61s/it, train_grad_norm=nan, train_lr=1.5e-6, train_loss=2.57, train_consumed_samples=32, train_step_time=39.3, train_epoch=1]Training steps:   0%|          | 4/1876 [04:03<27:06:28, 52.13s/it, train_grad_norm=nan, train_lr=1.5e-6, train_loss=2.57, train_consumed_samples=32, train_step_time=39.3, train_epoch=1]Training steps:   0%|          | 4/1876 [04:44<27:06:28, 52.13s/it, train_grad_norm=nan, train_lr=2e-6, train_loss=1.76, train_consumed_samples=40, train_step_time=38.8, train_epoch=1]  Training steps:   0%|          | 5/1876 [04:44<25:00:03, 48.10s/it, train_grad_norm=nan, train_lr=2e-6, train_loss=1.76, train_consumed_samples=40, train_step_time=38.8, train_epoch=1]Training steps:   0%|          | 5/1876 [05:26<25:00:03, 48.10s/it, train_grad_norm=nan, train_lr=2.5e-6, train_loss=1.84, train_consumed_samples=48, train_step_time=39.6, train_epoch=1]Training steps:   0%|          | 6/1876 [05:26<23:53:23, 45.99s/it, train_grad_norm=nan, train_lr=2.5e-6, train_loss=1.84, train_consumed_samples=48, train_step_time=39.6, train_epoch=1]Training steps:   0%|          | 6/1876 [06:08<23:53:23, 45.99s/it, train_grad_norm=nan, train_lr=3e-6, train_loss=1.87, train_consumed_samples=56, train_step_time=39, train_epoch=1]    Training steps:   0%|          | 7/1876 [06:08<23:07:26, 44.54s/it, train_grad_norm=nan, train_lr=3e-6, train_loss=1.87, train_consumed_samples=56, train_step_time=39, train_epoch=1]Training steps:   0%|          | 7/1876 [06:49<23:07:26, 44.54s/it, train_grad_norm=nan, train_lr=3.5e-6, train_loss=1.22, train_consumed_samples=64, train_step_time=39, train_epoch=1]Training steps:   0%|          | 8/1876 [06:49<22:32:38, 43.45s/it, train_grad_norm=nan, train_lr=3.5e-6, train_loss=1.22, train_consumed_samples=64, train_step_time=39, train_epoch=1]Training steps:   0%|          | 8/1876 [07:30<22:32:38, 43.45s/it, train_grad_norm=nan, train_lr=4e-6, train_loss=1.46, train_consumed_samples=72, train_step_time=39.2, train_epoch=1]Training steps:   0%|          | 9/1876 [07:30<22:10:24, 42.76s/it, train_grad_norm=nan, train_lr=4e-6, train_loss=1.46, train_consumed_samples=72, train_step_time=39.2, train_epoch=1]Training steps:   0%|          | 9/1876 [08:11<22:10:24, 42.76s/it, train_grad_norm=nan, train_lr=4.5e-6, train_loss=1.37, train_consumed_samples=80, train_step_time=37.7, train_epoch=1]Training steps:   1%|          | 10/1876 [08:11<21:56:35, 42.33s/it, train_grad_norm=nan, train_lr=4.5e-6, train_loss=1.37, train_consumed_samples=80, train_step_time=37.7, train_epoch=1]Training steps:   1%|          | 10/1876 [08:51<21:56:35, 42.33s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.75, train_consumed_samples=88, train_step_time=38.5, train_epoch=1]  Training steps:   1%|          | 11/1876 [08:51<21:33:07, 41.60s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.75, train_consumed_samples=88, train_step_time=38.5, train_epoch=1]
+Validation steps:   0%|          | 0/1 [00:00<?, ?it/s][A
+Validation steps:   0%|          | 0/1 [01:20<?, ?it/s, val_loss=1.64, val_validation_step_time=61.3][A
+Validation steps: 100%|██████████| 1/1 [01:20<00:00, 80.01s/it, val_loss=1.64, val_validation_step_time=61.3][AValidation steps: 100%|██████████| 1/1 [01:20<00:00, 80.01s/it, val_loss=1.64, val_validation_step_time=61.3]
+Training steps:   1%|          | 11/1876 [10:52<21:33:07, 41.60s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.92, train_consumed_samples=96, train_step_time=39, train_epoch=1, val_loss=1.64, val_validation_step_time=61.3]Training steps:   1%|          | 11/1876 [12:25<35:05:34, 67.74s/it, train_grad_norm=nan, train_lr=5e-6, train_loss=1.92, train_consumed_samples=96, train_step_time=39, train_epoch=1, val_loss=1.64, val_validation_step_time=61.3]
+Error executing job with overrides: ['trainer.precision=16-mixed', 'trainer.num_nodes=16', 'trainer.devices=-1', 'trainer.sft.limit_val_batches=1', 'trainer.sft.val_check_interval=12', 'trainer.sft.save_interval=12', 'model.megatron_amp_O2=True', 'model.restore_from_path=/home/u9824269/LLM/llama3/train/llama3-70b-16-mixed.nemo', 'model.optim.lr=5e-6', 'model.optim.name=distributed_fused_adam', 'model.answer_only_loss=True', 'model.data.num_workers=0', 'model.data.train_ds.micro_batch_size=1', 'model.data.train_ds.global_batch_size=8', 'model.data.train_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl', 'model.data.train_ds.max_seq_length=8192', 'model.data.train_ds.add_eos=True', 'model.data.train_ds.add_bos=True', 'model.data.validation_ds.max_seq_length=8192', 'model.data.validation_ds.micro_batch_size=1', 'model.data.validation_ds.global_batch_size=128', 'model.data.validation_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl', 'model.data.validation_ds.add_bos=True', 'model.data.validation_ds.add_eos=True', 'model.tensor_model_parallel_size=8', 'model.pipeline_model_parallel_size=4', 'model.sequence_parallel=True', 'model.activations_checkpoint_granularity=selective', 'model.activations_checkpoint_method=uniform', '+model.context_parallel_size=1', 'exp_manager.create_wandb_logger=True', 'exp_manager.explicit_log_dir=/home/u9824269/LLM/llama3/train/result_dir', 'exp_manager.wandb_logger_kwargs.project=llama3-cp-debug', 'exp_manager.wandb_logger_kwargs.name=dolly_sft_run_tp8_no_cp', 'exp_manager.resume_if_exists=True', 'exp_manager.resume_ignore_no_checkpoint=True', 'exp_manager.create_checkpoint_callback=True', 'exp_manager.checkpoint_callback_params.save_nemo_on_train_end=True', 'exp_manager.checkpoint_callback_params.monitor=validation_loss']
+Traceback (most recent call last):
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py", line 244, in <module>
+    main()
+  File "/opt/NeMo/nemo/core/config/hydra_runner.py", line 129, in wrapper
+    _run_hydra(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/usr/local/lib/python3.10/dist-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/usr/local/lib/python3.10/dist-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py", line 240, in main
+    sft_trainer.fit()
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/algorithms/supervised.py", line 225, in fit
+    self.save(metrics, is_train_end=is_train_end)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/algorithms/supervised.py", line 245, in save
+    self.ckpt_callback.custom_save(monitor_candidates=monitor_candidates, is_train_end=is_train_end)
+  File "/home/u9824269/LLM/nemo/NeMo-Aligner/nemo_aligner/utils/utils.py", line 62, in custom_save_ckpt_func
+    super(NeMoModelCheckpoint, self)._save_last_checkpoint(trainer, monitor_candidates)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py", line 654, in _save_last_checkpoint
+    self._save_checkpoint(trainer, filepath)
+  File "/opt/NeMo/nemo/utils/callbacks/nemo_model_checkpoint.py", line 273, in _save_checkpoint
+    super()._save_checkpoint(trainer, filepath)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py", line 365, in _save_checkpoint
+    trainer.save_checkpoint(filepath, self.save_weights_only)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1316, in save_checkpoint
+    self._checkpoint_connector.save_checkpoint(filepath, weights_only=weights_only, storage_options=storage_options)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 506, in save_checkpoint
+    _checkpoint = self.dump_checkpoint(weights_only)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 462, in dump_checkpoint
+    prec_plugin_state_dict = prec_plugin.state_dict()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/plugins/precision/amp.py", line 123, in state_dict
+    return self.scaler.state_dict()
+  File "/opt/NeMo/nemo/collections/nlp/parts/nlp_overrides.py", line 1308, in state_dict
+    "_hysteresis_tracker": self._hysteresis_tracker,
+AttributeError: 'GradScaler' object has no attribute '_hysteresis_tracker'

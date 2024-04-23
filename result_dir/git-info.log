@@ -1,0 +1,26 @@
+commit hash: c199761f5749bbb6cfa67efe224f075e19675712
+diff --git a/examples/nlp/gpt/conf/gpt_sft.yaml b/examples/nlp/gpt/conf/gpt_sft.yaml
+index cb0a84d..83b2de8 100644
+--- a/examples/nlp/gpt/conf/gpt_sft.yaml
++++ b/examples/nlp/gpt/conf/gpt_sft.yaml
+@@ -163,7 +163,7 @@ model:
+       add_bos: False
+       truncation_field: "input" # # Can be multiple keys separated with ',' Options: keys in prompt_template
+       index_mapping_dir: null # Path to a directory to write index mapping files.
+-      prompt_template: "{input} {output}" # fstring to use for assistant prompt. Example: "Q: {input}\nA: {output}"
++      prompt_template: "<|start_header_id|>user<|end_header_id|>\n\n{input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{output}" # fstring to use for assistant prompt. Example: "Q: {input}\nA: {output}"
+       hf_dataset: False # Whether to load the json file with the HuggingFace dataset. otherwise, will load the jsonl file with the JSONLMemMapDataset.
+       truncation_method: 'right' # Truncation from which position, Options: ['left', 'right']
+ 
+diff --git a/examples/nlp/gpt/train_gpt_sft.py b/examples/nlp/gpt/train_gpt_sft.py
+index f524456..a769523 100644
+--- a/examples/nlp/gpt/train_gpt_sft.py
++++ b/examples/nlp/gpt/train_gpt_sft.py
+@@ -61,6 +61,7 @@ def _modify_config(gpt_cfg, cfg, add_cfg_to_tree=False):
+         gpt_cfg.micro_batch_size = cfg.model.data.train_ds.micro_batch_size
+         gpt_cfg.global_batch_size = cfg.model.data.train_ds.global_batch_size
+         gpt_cfg.sequence_parallel = cfg.model.get("sequence_parallel", False)
++        gpt_cfg.context_parallel_size = cfg.model.get("context_parallel_size", 1)
+         gpt_cfg.activations_checkpoint_granularity = cfg.model.get("activations_checkpoint_granularity", None)
+         gpt_cfg.activations_checkpoint_num_layers = cfg.model.get("activations_checkpoint_num_layers", None)
+         gpt_cfg.activations_checkpoint_method = cfg.model.get("activations_checkpoint_method", None)

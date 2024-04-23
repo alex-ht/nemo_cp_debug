@@ -1,0 +1,296 @@
+{
+    "os": "Linux-3.10.0-1127.el7.x86_64-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-23T01:19:07.924911",
+    "startedAt": "2024-04-23T01:19:06.719804",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "trainer.precision=16-mixed",
+        "trainer.num_nodes=16",
+        "trainer.devices=-1",
+        "trainer.sft.limit_val_batches=1",
+        "trainer.sft.val_check_interval=12",
+        "trainer.sft.save_interval=12",
+        "model.megatron_amp_O2=True",
+        "model.restore_from_path=/home/u9824269/LLM/llama3/train/llama3-70b-16-mixed.nemo",
+        "model.optim.lr=5e-6",
+        "model.optim.name=distributed_fused_adam",
+        "model.answer_only_loss=True",
+        "model.data.num_workers=0",
+        "model.data.train_ds.micro_batch_size=1",
+        "model.data.train_ds.global_batch_size=8",
+        "model.data.train_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl",
+        "model.data.train_ds.max_seq_length=8192",
+        "model.data.train_ds.add_eos=True",
+        "model.data.train_ds.add_bos=True",
+        "model.data.validation_ds.max_seq_length=8192",
+        "model.data.validation_ds.micro_batch_size=1",
+        "model.data.validation_ds.global_batch_size=128",
+        "model.data.validation_ds.file_path=/home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl",
+        "model.data.validation_ds.add_bos=True",
+        "model.data.validation_ds.add_eos=True",
+        "model.tensor_model_parallel_size=8",
+        "model.pipeline_model_parallel_size=4",
+        "model.sequence_parallel=True",
+        "model.activations_checkpoint_granularity=selective",
+        "model.activations_checkpoint_method=uniform",
+        "+model.context_parallel_size=1",
+        "exp_manager.create_wandb_logger=True",
+        "exp_manager.explicit_log_dir=/home/u9824269/LLM/llama3/train/result_dir",
+        "exp_manager.wandb_logger_kwargs.project=llama3-cp-debug",
+        "exp_manager.wandb_logger_kwargs.name=dolly_sft_run_tp8_no_cp",
+        "exp_manager.resume_if_exists=True",
+        "exp_manager.resume_ignore_no_checkpoint=True",
+        "exp_manager.create_checkpoint_callback=True",
+        "exp_manager.checkpoint_callback_params.save_nemo_on_train_end=True",
+        "exp_manager.checkpoint_callback_params.monitor=validation_loss"
+    ],
+    "state": "running",
+    "program": "/home/u9824269/LLM/nemo/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py",
+    "codePathLocal": "examples/nlp/gpt/train_gpt_sft.py",
+    "codePath": "examples/nlp/gpt/train_gpt_sft.py",
+    "git": {
+        "remote": "https://github.com/NVIDIA/NeMo-Aligner.git",
+        "commit": "c199761f5749bbb6cfa67efe224f075e19675712"
+    },
+    "email": null,
+    "root": "/home/u9824269/LLM/nemo/NeMo-Aligner",
+    "host": "gn1101.twcc.ai",
+    "username": "u9824269",
+    "executable": "/usr/bin/python",
+    "cpu_count": 36,
+    "cpu_count_logical": 36,
+    "cpu_freq": {
+        "current": 3000.0,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 0.015625,
+            "used": 1.1444091796875e-05
+        }
+    },
+    "gpu": "Tesla V100-SXM2-32GB",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        }
+    ],
+    "memory": {
+        "total": 754.3754539489746
+    }
+}

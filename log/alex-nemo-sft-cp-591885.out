@@ -1,0 +1,27 @@
+[3;J[H[2Jsrun: error: gn0703: tasks 20-21: Exited with exit code 1
+srun: Terminating job step 591885.0
+srun: error: gn0703: task 23: Exited with exit code 1
+srun: error: gn0705: tasks 25-31: Terminated
+srun: error: gn0703: tasks 16,18: Exited with exit code 1
+srun: error: gn0701: task 6: Terminated
+srun: error: gn0703: tasks 17,19: Exited with exit code 1
+srun: error: gn0701: task 4: Terminated
+srun: error: gn0703: task 22: Exited with exit code 1
+srun: error: gn0701: tasks 5,7: Terminated
+srun: error: gn0701: tasks 0,2-3: Terminated
+srun: error: gn0701: task 1: Terminated
+srun: error: gn0815: tasks 104-111: Terminated
+srun: error: gn0710: tasks 56-63: Terminated
+srun: error: gn0714: tasks 80-87: Terminated
+srun: error: gn0709: tasks 48-55: Terminated
+srun: error: gn0708: tasks 40-47: Terminated
+srun: error: gn0816: tasks 112-119: Terminated
+srun: error: gn0711: tasks 64-71: Terminated
+srun: error: gn0817: tasks 120-127: Terminated
+srun: error: gn0712: tasks 72-79: Terminated
+srun: error: gn0717: tasks 96-103: Terminated
+srun: error: gn0716: tasks 88-95: Terminated
+srun: error: gn0706: tasks 32-39: Terminated
+srun: error: gn0702: tasks 8-15: Terminated
+srun: error: gn0705: task 24: Terminated
+srun: Force Terminated job step 591885.0

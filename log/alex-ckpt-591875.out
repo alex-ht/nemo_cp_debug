@@ -1,0 +1,1025 @@
+[3;J[H[2J13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.161.03
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.02 (build 82611821)
+PyTorch Version 2.3.0a0+ebedce2
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+ERROR: This container was built for NVIDIA Driver Release 545.23 or later, but
+       version 470.161.03 was detected and compatibility mode is UNAVAILABLE.
+
+       [[]]
+
+[NeMo I 2024-04-23 08:44:01 convert_llama_hf_to_nemo:99] loading checkpoint /work/u4005115/models/llama/Meta-Llama-3-70B
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:11<05:19, 11.02s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:24<05:42, 12.23s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:37<05:40, 12.62s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:50<05:38, 13.03s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [01:04<05:26, 13.08s/it]Loading checkpoint shards:  20%|██        | 6/30 [01:17<05:15, 13.14s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [01:30<05:05, 13.26s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [01:44<04:56, 13.47s/it]Loading checkpoint shards:  30%|███       | 9/30 [01:58<04:47, 13.69s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [02:11<04:30, 13.51s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [02:25<04:17, 13.56s/it]Loading checkpoint shards:  40%|████      | 12/30 [02:37<03:55, 13.10s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [02:51<03:45, 13.25s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [03:04<03:33, 13.36s/it]Loading checkpoint shards:  50%|█████     | 15/30 [03:17<03:16, 13.12s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [03:31<03:06, 13.30s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [03:44<02:54, 13.39s/it]Loading checkpoint shards:  60%|██████    | 18/30 [03:58<02:42, 13.57s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [04:12<02:28, 13.51s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [04:25<02:16, 13.61s/it]Loading checkpoint shards:  70%|███████   | 21/30 [04:39<02:01, 13.48s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [04:53<01:49, 13.70s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [05:06<01:34, 13.48s/it]Loading checkpoint shards:  80%|████████  | 24/30 [05:20<01:21, 13.58s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [05:33<01:07, 13.47s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [05:46<00:53, 13.37s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [05:59<00:40, 13.35s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [06:13<00:26, 13.34s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [06:26<00:13, 13.28s/it]Loading checkpoint shards: 100%|██████████| 30/30 [06:30<00:00, 10.69s/it]Loading checkpoint shards: 100%|██████████| 30/30 [06:30<00:00, 13.03s/it]
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'PreTrainedTokenizerFast'. 
+The class this function is called from is 'LlamaTokenizerFast'.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+hf_config: {'vocab_size': 128256, 'max_position_embeddings': 8192, 'hidden_size': 8192, 'intermediate_size': 28672, 'num_hidden_layers': 80, 'num_attention_heads': 64, 'num_key_value_heads': 8, 'hidden_act': 'silu', 'initializer_range': 0.02, 'rms_norm_eps': 1e-05, 'pretraining_tp': 1, 'use_cache': True, 'rope_theta': 500000.0, 'rope_scaling': None, 'attention_bias': False, 'attention_dropout': 0.0, 'return_dict': True, 'output_hidden_states': False, 'output_attentions': False, 'torchscript': False, 'torch_dtype': torch.bfloat16, 'use_bfloat16': False, 'tf_legacy_loss': False, 'pruned_heads': {}, 'tie_word_embeddings': False, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'num_beam_groups': 1, 'diversity_penalty': 0.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'architectures': ['LlamaForCausalLM'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'tokenizer_class': None, 'prefix': None, 'bos_token_id': 128000, 'pad_token_id': None, 'eos_token_id': 128001, 'sep_token_id': None, 'decoder_start_token_id': None, 'task_specific_params': None, 'problem_type': None, '_name_or_path': '/work/u4005115/models/llama/Meta-Llama-3-70B', '_commit_hash': None, '_attn_implementation_internal': 'sdpa', 'transformers_version': '4.40.0.dev0', 'model_type': 'llama'}
+named parameters:
+- model.embed_tokens.weight
+- model.layers.0.self_attn.q_proj.weight
+- model.layers.0.self_attn.k_proj.weight
+- model.layers.0.self_attn.v_proj.weight
+- model.layers.0.self_attn.o_proj.weight
+- model.layers.0.mlp.gate_proj.weight
+- model.layers.0.mlp.up_proj.weight
+- model.layers.0.mlp.down_proj.weight
+- model.layers.0.input_layernorm.weight
+- model.layers.0.post_attention_layernorm.weight
+- model.layers.1.self_attn.q_proj.weight
+- model.layers.1.self_attn.k_proj.weight
+- model.layers.1.self_attn.v_proj.weight
+- model.layers.1.self_attn.o_proj.weight
+- model.layers.1.mlp.gate_proj.weight
+- model.layers.1.mlp.up_proj.weight
+- model.layers.1.mlp.down_proj.weight
+- model.layers.1.input_layernorm.weight
+- model.layers.1.post_attention_layernorm.weight
+- model.layers.2.self_attn.q_proj.weight
+- model.layers.2.self_attn.k_proj.weight
+- model.layers.2.self_attn.v_proj.weight
+- model.layers.2.self_attn.o_proj.weight
+- model.layers.2.mlp.gate_proj.weight
+- model.layers.2.mlp.up_proj.weight
+- model.layers.2.mlp.down_proj.weight
+- model.layers.2.input_layernorm.weight
+- model.layers.2.post_attention_layernorm.weight
+- model.layers.3.self_attn.q_proj.weight
+- model.layers.3.self_attn.k_proj.weight
+- model.layers.3.self_attn.v_proj.weight
+- model.layers.3.self_attn.o_proj.weight
+- model.layers.3.mlp.gate_proj.weight
+- model.layers.3.mlp.up_proj.weight
+- model.layers.3.mlp.down_proj.weight
+- model.layers.3.input_layernorm.weight
+- model.layers.3.post_attention_layernorm.weight
+- model.layers.4.self_attn.q_proj.weight
+- model.layers.4.self_attn.k_proj.weight
+- model.layers.4.self_attn.v_proj.weight
+- model.layers.4.self_attn.o_proj.weight
+- model.layers.4.mlp.gate_proj.weight
+- model.layers.4.mlp.up_proj.weight
+- model.layers.4.mlp.down_proj.weight
+- model.layers.4.input_layernorm.weight
+- model.layers.4.post_attention_layernorm.weight
+- model.layers.5.self_attn.q_proj.weight
+- model.layers.5.self_attn.k_proj.weight
+- model.layers.5.self_attn.v_proj.weight
+- model.layers.5.self_attn.o_proj.weight
+- model.layers.5.mlp.gate_proj.weight
+- model.layers.5.mlp.up_proj.weight
+- model.layers.5.mlp.down_proj.weight
+- model.layers.5.input_layernorm.weight
+- model.layers.5.post_attention_layernorm.weight
+- model.layers.6.self_attn.q_proj.weight
+- model.layers.6.self_attn.k_proj.weight
+- model.layers.6.self_attn.v_proj.weight
+- model.layers.6.self_attn.o_proj.weight
+- model.layers.6.mlp.gate_proj.weight
+- model.layers.6.mlp.up_proj.weight
+- model.layers.6.mlp.down_proj.weight
+- model.layers.6.input_layernorm.weight
+- model.layers.6.post_attention_layernorm.weight
+- model.layers.7.self_attn.q_proj.weight
+- model.layers.7.self_attn.k_proj.weight
+- model.layers.7.self_attn.v_proj.weight
+- model.layers.7.self_attn.o_proj.weight
+- model.layers.7.mlp.gate_proj.weight
+- model.layers.7.mlp.up_proj.weight
+- model.layers.7.mlp.down_proj.weight
+- model.layers.7.input_layernorm.weight
+- model.layers.7.post_attention_layernorm.weight
+- model.layers.8.self_attn.q_proj.weight
+- model.layers.8.self_attn.k_proj.weight
+- model.layers.8.self_attn.v_proj.weight
+- model.layers.8.self_attn.o_proj.weight
+- model.layers.8.mlp.gate_proj.weight
+- model.layers.8.mlp.up_proj.weight
+- model.layers.8.mlp.down_proj.weight
+- model.layers.8.input_layernorm.weight
+- model.layers.8.post_attention_layernorm.weight
+- model.layers.9.self_attn.q_proj.weight
+- model.layers.9.self_attn.k_proj.weight
+- model.layers.9.self_attn.v_proj.weight
+- model.layers.9.self_attn.o_proj.weight
+- model.layers.9.mlp.gate_proj.weight
+- model.layers.9.mlp.up_proj.weight
+- model.layers.9.mlp.down_proj.weight
+- model.layers.9.input_layernorm.weight
+- model.layers.9.post_attention_layernorm.weight
+- model.layers.10.self_attn.q_proj.weight
+- model.layers.10.self_attn.k_proj.weight
+- model.layers.10.self_attn.v_proj.weight
+- model.layers.10.self_attn.o_proj.weight
+- model.layers.10.mlp.gate_proj.weight
+- model.layers.10.mlp.up_proj.weight
+- model.layers.10.mlp.down_proj.weight
+- model.layers.10.input_layernorm.weight
+- model.layers.10.post_attention_layernorm.weight
+- model.layers.11.self_attn.q_proj.weight
+- model.layers.11.self_attn.k_proj.weight
+- model.layers.11.self_attn.v_proj.weight
+- model.layers.11.self_attn.o_proj.weight
+- model.layers.11.mlp.gate_proj.weight
+- model.layers.11.mlp.up_proj.weight
+- model.layers.11.mlp.down_proj.weight
+- model.layers.11.input_layernorm.weight
+- model.layers.11.post_attention_layernorm.weight
+- model.layers.12.self_attn.q_proj.weight
+- model.layers.12.self_attn.k_proj.weight
+- model.layers.12.self_attn.v_proj.weight
+- model.layers.12.self_attn.o_proj.weight
+- model.layers.12.mlp.gate_proj.weight
+- model.layers.12.mlp.up_proj.weight
+- model.layers.12.mlp.down_proj.weight
+- model.layers.12.input_layernorm.weight
+- model.layers.12.post_attention_layernorm.weight
+- model.layers.13.self_attn.q_proj.weight
+- model.layers.13.self_attn.k_proj.weight
+- model.layers.13.self_attn.v_proj.weight
+- model.layers.13.self_attn.o_proj.weight
+- model.layers.13.mlp.gate_proj.weight
+- model.layers.13.mlp.up_proj.weight
+- model.layers.13.mlp.down_proj.weight
+- model.layers.13.input_layernorm.weight
+- model.layers.13.post_attention_layernorm.weight
+- model.layers.14.self_attn.q_proj.weight
+- model.layers.14.self_attn.k_proj.weight
+- model.layers.14.self_attn.v_proj.weight
+- model.layers.14.self_attn.o_proj.weight
+- model.layers.14.mlp.gate_proj.weight
+- model.layers.14.mlp.up_proj.weight
+- model.layers.14.mlp.down_proj.weight
+- model.layers.14.input_layernorm.weight
+- model.layers.14.post_attention_layernorm.weight
+- model.layers.15.self_attn.q_proj.weight
+- model.layers.15.self_attn.k_proj.weight
+- model.layers.15.self_attn.v_proj.weight
+- model.layers.15.self_attn.o_proj.weight
+- model.layers.15.mlp.gate_proj.weight
+- model.layers.15.mlp.up_proj.weight
+- model.layers.15.mlp.down_proj.weight
+- model.layers.15.input_layernorm.weight
+- model.layers.15.post_attention_layernorm.weight
+- model.layers.16.self_attn.q_proj.weight
+- model.layers.16.self_attn.k_proj.weight
+- model.layers.16.self_attn.v_proj.weight
+- model.layers.16.self_attn.o_proj.weight
+- model.layers.16.mlp.gate_proj.weight
+- model.layers.16.mlp.up_proj.weight
+- model.layers.16.mlp.down_proj.weight
+- model.layers.16.input_layernorm.weight
+- model.layers.16.post_attention_layernorm.weight
+- model.layers.17.self_attn.q_proj.weight
+- model.layers.17.self_attn.k_proj.weight
+- model.layers.17.self_attn.v_proj.weight
+- model.layers.17.self_attn.o_proj.weight
+- model.layers.17.mlp.gate_proj.weight
+- model.layers.17.mlp.up_proj.weight
+- model.layers.17.mlp.down_proj.weight
+- model.layers.17.input_layernorm.weight
+- model.layers.17.post_attention_layernorm.weight
+- model.layers.18.self_attn.q_proj.weight
+- model.layers.18.self_attn.k_proj.weight
+- model.layers.18.self_attn.v_proj.weight
+- model.layers.18.self_attn.o_proj.weight
+- model.layers.18.mlp.gate_proj.weight
+- model.layers.18.mlp.up_proj.weight
+- model.layers.18.mlp.down_proj.weight
+- model.layers.18.input_layernorm.weight
+- model.layers.18.post_attention_layernorm.weight
+- model.layers.19.self_attn.q_proj.weight
+- model.layers.19.self_attn.k_proj.weight
+- model.layers.19.self_attn.v_proj.weight
+- model.layers.19.self_attn.o_proj.weight
+- model.layers.19.mlp.gate_proj.weight
+- model.layers.19.mlp.up_proj.weight
+- model.layers.19.mlp.down_proj.weight
+- model.layers.19.input_layernorm.weight
+- model.layers.19.post_attention_layernorm.weight
+- model.layers.20.self_attn.q_proj.weight
+- model.layers.20.self_attn.k_proj.weight
+- model.layers.20.self_attn.v_proj.weight
+- model.layers.20.self_attn.o_proj.weight
+- model.layers.20.mlp.gate_proj.weight
+- model.layers.20.mlp.up_proj.weight
+- model.layers.20.mlp.down_proj.weight
+- model.layers.20.input_layernorm.weight
+- model.layers.20.post_attention_layernorm.weight
+- model.layers.21.self_attn.q_proj.weight
+- model.layers.21.self_attn.k_proj.weight
+- model.layers.21.self_attn.v_proj.weight
+- model.layers.21.self_attn.o_proj.weight
+- model.layers.21.mlp.gate_proj.weight
+- model.layers.21.mlp.up_proj.weight
+- model.layers.21.mlp.down_proj.weight
+- model.layers.21.input_layernorm.weight
+- model.layers.21.post_attention_layernorm.weight
+- model.layers.22.self_attn.q_proj.weight
+- model.layers.22.self_attn.k_proj.weight
+- model.layers.22.self_attn.v_proj.weight
+- model.layers.22.self_attn.o_proj.weight
+- model.layers.22.mlp.gate_proj.weight
+- model.layers.22.mlp.up_proj.weight
+- model.layers.22.mlp.down_proj.weight
+- model.layers.22.input_layernorm.weight
+- model.layers.22.post_attention_layernorm.weight
+- model.layers.23.self_attn.q_proj.weight
+- model.layers.23.self_attn.k_proj.weight
+- model.layers.23.self_attn.v_proj.weight
+- model.layers.23.self_attn.o_proj.weight
+- model.layers.23.mlp.gate_proj.weight
+- model.layers.23.mlp.up_proj.weight
+- model.layers.23.mlp.down_proj.weight
+- model.layers.23.input_layernorm.weight
+- model.layers.23.post_attention_layernorm.weight
+- model.layers.24.self_attn.q_proj.weight
+- model.layers.24.self_attn.k_proj.weight
+- model.layers.24.self_attn.v_proj.weight
+- model.layers.24.self_attn.o_proj.weight
+- model.layers.24.mlp.gate_proj.weight
+- model.layers.24.mlp.up_proj.weight
+- model.layers.24.mlp.down_proj.weight
+- model.layers.24.input_layernorm.weight
+- model.layers.24.post_attention_layernorm.weight
+- model.layers.25.self_attn.q_proj.weight
+- model.layers.25.self_attn.k_proj.weight
+- model.layers.25.self_attn.v_proj.weight
+- model.layers.25.self_attn.o_proj.weight
+- model.layers.25.mlp.gate_proj.weight
+- model.layers.25.mlp.up_proj.weight
+- model.layers.25.mlp.down_proj.weight
+- model.layers.25.input_layernorm.weight
+- model.layers.25.post_attention_layernorm.weight
+- model.layers.26.self_attn.q_proj.weight
+- model.layers.26.self_attn.k_proj.weight
+- model.layers.26.self_attn.v_proj.weight
+- model.layers.26.self_attn.o_proj.weight
+- model.layers.26.mlp.gate_proj.weight
+- model.layers.26.mlp.up_proj.weight
+- model.layers.26.mlp.down_proj.weight
+- model.layers.26.input_layernorm.weight
+- model.layers.26.post_attention_layernorm.weight
+- model.layers.27.self_attn.q_proj.weight
+- model.layers.27.self_attn.k_proj.weight
+- model.layers.27.self_attn.v_proj.weight
+- model.layers.27.self_attn.o_proj.weight
+- model.layers.27.mlp.gate_proj.weight
+- model.layers.27.mlp.up_proj.weight
+- model.layers.27.mlp.down_proj.weight
+- model.layers.27.input_layernorm.weight
+- model.layers.27.post_attention_layernorm.weight
+- model.layers.28.self_attn.q_proj.weight
+- model.layers.28.self_attn.k_proj.weight
+- model.layers.28.self_attn.v_proj.weight
+- model.layers.28.self_attn.o_proj.weight
+- model.layers.28.mlp.gate_proj.weight
+- model.layers.28.mlp.up_proj.weight
+- model.layers.28.mlp.down_proj.weight
+- model.layers.28.input_layernorm.weight
+- model.layers.28.post_attention_layernorm.weight
+- model.layers.29.self_attn.q_proj.weight
+- model.layers.29.self_attn.k_proj.weight
+- model.layers.29.self_attn.v_proj.weight
+- model.layers.29.self_attn.o_proj.weight
+- model.layers.29.mlp.gate_proj.weight
+- model.layers.29.mlp.up_proj.weight
+- model.layers.29.mlp.down_proj.weight
+- model.layers.29.input_layernorm.weight
+- model.layers.29.post_attention_layernorm.weight
+- model.layers.30.self_attn.q_proj.weight
+- model.layers.30.self_attn.k_proj.weight
+- model.layers.30.self_attn.v_proj.weight
+- model.layers.30.self_attn.o_proj.weight
+- model.layers.30.mlp.gate_proj.weight
+- model.layers.30.mlp.up_proj.weight
+- model.layers.30.mlp.down_proj.weight
+- model.layers.30.input_layernorm.weight
+- model.layers.30.post_attention_layernorm.weight
+- model.layers.31.self_attn.q_proj.weight
+- model.layers.31.self_attn.k_proj.weight
+- model.layers.31.self_attn.v_proj.weight
+- model.layers.31.self_attn.o_proj.weight
+- model.layers.31.mlp.gate_proj.weight
+- model.layers.31.mlp.up_proj.weight
+- model.layers.31.mlp.down_proj.weight
+- model.layers.31.input_layernorm.weight
+- model.layers.31.post_attention_layernorm.weight
+- model.layers.32.self_attn.q_proj.weight
+- model.layers.32.self_attn.k_proj.weight
+- model.layers.32.self_attn.v_proj.weight
+- model.layers.32.self_attn.o_proj.weight
+- model.layers.32.mlp.gate_proj.weight
+- model.layers.32.mlp.up_proj.weight
+- model.layers.32.mlp.down_proj.weight
+- model.layers.32.input_layernorm.weight
+- model.layers.32.post_attention_layernorm.weight
+- model.layers.33.self_attn.q_proj.weight
+- model.layers.33.self_attn.k_proj.weight
+- model.layers.33.self_attn.v_proj.weight
+- model.layers.33.self_attn.o_proj.weight
+- model.layers.33.mlp.gate_proj.weight
+- model.layers.33.mlp.up_proj.weight
+- model.layers.33.mlp.down_proj.weight
+- model.layers.33.input_layernorm.weight
+- model.layers.33.post_attention_layernorm.weight
+- model.layers.34.self_attn.q_proj.weight
+- model.layers.34.self_attn.k_proj.weight
+- model.layers.34.self_attn.v_proj.weight
+- model.layers.34.self_attn.o_proj.weight
+- model.layers.34.mlp.gate_proj.weight
+- model.layers.34.mlp.up_proj.weight
+- model.layers.34.mlp.down_proj.weight
+- model.layers.34.input_layernorm.weight
+- model.layers.34.post_attention_layernorm.weight
+- model.layers.35.self_attn.q_proj.weight
+- model.layers.35.self_attn.k_proj.weight
+- model.layers.35.self_attn.v_proj.weight
+- model.layers.35.self_attn.o_proj.weight
+- model.layers.35.mlp.gate_proj.weight
+- model.layers.35.mlp.up_proj.weight
+- model.layers.35.mlp.down_proj.weight
+- model.layers.35.input_layernorm.weight
+- model.layers.35.post_attention_layernorm.weight
+- model.layers.36.self_attn.q_proj.weight
+- model.layers.36.self_attn.k_proj.weight
+- model.layers.36.self_attn.v_proj.weight
+- model.layers.36.self_attn.o_proj.weight
+- model.layers.36.mlp.gate_proj.weight
+- model.layers.36.mlp.up_proj.weight
+- model.layers.36.mlp.down_proj.weight
+- model.layers.36.input_layernorm.weight
+- model.layers.36.post_attention_layernorm.weight
+- model.layers.37.self_attn.q_proj.weight
+- model.layers.37.self_attn.k_proj.weight
+- model.layers.37.self_attn.v_proj.weight
+- model.layers.37.self_attn.o_proj.weight
+- model.layers.37.mlp.gate_proj.weight
+- model.layers.37.mlp.up_proj.weight
+- model.layers.37.mlp.down_proj.weight
+- model.layers.37.input_layernorm.weight
+- model.layers.37.post_attention_layernorm.weight
+- model.layers.38.self_attn.q_proj.weight
+- model.layers.38.self_attn.k_proj.weight
+- model.layers.38.self_attn.v_proj.weight
+- model.layers.38.self_attn.o_proj.weight
+- model.layers.38.mlp.gate_proj.weight
+- model.layers.38.mlp.up_proj.weight
+- model.layers.38.mlp.down_proj.weight
+- model.layers.38.input_layernorm.weight
+- model.layers.38.post_attention_layernorm.weight
+- model.layers.39.self_attn.q_proj.weight
+- model.layers.39.self_attn.k_proj.weight
+- model.layers.39.self_attn.v_proj.weight
+- model.layers.39.self_attn.o_proj.weight
+- model.layers.39.mlp.gate_proj.weight
+- model.layers.39.mlp.up_proj.weight
+- model.layers.39.mlp.down_proj.weight
+- model.layers.39.input_layernorm.weight
+- model.layers.39.post_attention_layernorm.weight
+- model.layers.40.self_attn.q_proj.weight
+- model.layers.40.self_attn.k_proj.weight
+- model.layers.40.self_attn.v_proj.weight
+- model.layers.40.self_attn.o_proj.weight
+- model.layers.40.mlp.gate_proj.weight
+- model.layers.40.mlp.up_proj.weight
+- model.layers.40.mlp.down_proj.weight
+- model.layers.40.input_layernorm.weight
+- model.layers.40.post_attention_layernorm.weight
+- model.layers.41.self_attn.q_proj.weight
+- model.layers.41.self_attn.k_proj.weight
+- model.layers.41.self_attn.v_proj.weight
+- model.layers.41.self_attn.o_proj.weight
+- model.layers.41.mlp.gate_proj.weight
+- model.layers.41.mlp.up_proj.weight
+- model.layers.41.mlp.down_proj.weight
+- model.layers.41.input_layernorm.weight
+- model.layers.41.post_attention_layernorm.weight
+- model.layers.42.self_attn.q_proj.weight
+- model.layers.42.self_attn.k_proj.weight
+- model.layers.42.self_attn.v_proj.weight
+- model.layers.42.self_attn.o_proj.weight
+- model.layers.42.mlp.gate_proj.weight
+- model.layers.42.mlp.up_proj.weight
+- model.layers.42.mlp.down_proj.weight
+- model.layers.42.input_layernorm.weight
+- model.layers.42.post_attention_layernorm.weight
+- model.layers.43.self_attn.q_proj.weight
+- model.layers.43.self_attn.k_proj.weight
+- model.layers.43.self_attn.v_proj.weight
+- model.layers.43.self_attn.o_proj.weight
+- model.layers.43.mlp.gate_proj.weight
+- model.layers.43.mlp.up_proj.weight
+- model.layers.43.mlp.down_proj.weight
+- model.layers.43.input_layernorm.weight
+- model.layers.43.post_attention_layernorm.weight
+- model.layers.44.self_attn.q_proj.weight
+- model.layers.44.self_attn.k_proj.weight
+- model.layers.44.self_attn.v_proj.weight
+- model.layers.44.self_attn.o_proj.weight
+- model.layers.44.mlp.gate_proj.weight
+- model.layers.44.mlp.up_proj.weight
+- model.layers.44.mlp.down_proj.weight
+- model.layers.44.input_layernorm.weight
+- model.layers.44.post_attention_layernorm.weight
+- model.layers.45.self_attn.q_proj.weight
+- model.layers.45.self_attn.k_proj.weight
+- model.layers.45.self_attn.v_proj.weight
+- model.layers.45.self_attn.o_proj.weight
+- model.layers.45.mlp.gate_proj.weight
+- model.layers.45.mlp.up_proj.weight
+- model.layers.45.mlp.down_proj.weight
+- model.layers.45.input_layernorm.weight
+- model.layers.45.post_attention_layernorm.weight
+- model.layers.46.self_attn.q_proj.weight
+- model.layers.46.self_attn.k_proj.weight
+- model.layers.46.self_attn.v_proj.weight
+- model.layers.46.self_attn.o_proj.weight
+- model.layers.46.mlp.gate_proj.weight
+- model.layers.46.mlp.up_proj.weight
+- model.layers.46.mlp.down_proj.weight
+- model.layers.46.input_layernorm.weight
+- model.layers.46.post_attention_layernorm.weight
+- model.layers.47.self_attn.q_proj.weight
+- model.layers.47.self_attn.k_proj.weight
+- model.layers.47.self_attn.v_proj.weight
+- model.layers.47.self_attn.o_proj.weight
+- model.layers.47.mlp.gate_proj.weight
+- model.layers.47.mlp.up_proj.weight
+- model.layers.47.mlp.down_proj.weight
+- model.layers.47.input_layernorm.weight
+- model.layers.47.post_attention_layernorm.weight
+- model.layers.48.self_attn.q_proj.weight
+- model.layers.48.self_attn.k_proj.weight
+- model.layers.48.self_attn.v_proj.weight
+- model.layers.48.self_attn.o_proj.weight
+- model.layers.48.mlp.gate_proj.weight
+- model.layers.48.mlp.up_proj.weight
+- model.layers.48.mlp.down_proj.weight
+- model.layers.48.input_layernorm.weight
+- model.layers.48.post_attention_layernorm.weight
+- model.layers.49.self_attn.q_proj.weight
+- model.layers.49.self_attn.k_proj.weight
+- model.layers.49.self_attn.v_proj.weight
+- model.layers.49.self_attn.o_proj.weight
+- model.layers.49.mlp.gate_proj.weight
+- model.layers.49.mlp.up_proj.weight
+- model.layers.49.mlp.down_proj.weight
+- model.layers.49.input_layernorm.weight
+- model.layers.49.post_attention_layernorm.weight
+- model.layers.50.self_attn.q_proj.weight
+- model.layers.50.self_attn.k_proj.weight
+- model.layers.50.self_attn.v_proj.weight
+- model.layers.50.self_attn.o_proj.weight
+- model.layers.50.mlp.gate_proj.weight
+- model.layers.50.mlp.up_proj.weight
+- model.layers.50.mlp.down_proj.weight
+- model.layers.50.input_layernorm.weight
+- model.layers.50.post_attention_layernorm.weight
+- model.layers.51.self_attn.q_proj.weight
+- model.layers.51.self_attn.k_proj.weight
+- model.layers.51.self_attn.v_proj.weight
+- model.layers.51.self_attn.o_proj.weight
+- model.layers.51.mlp.gate_proj.weight
+- model.layers.51.mlp.up_proj.weight
+- model.layers.51.mlp.down_proj.weight
+- model.layers.51.input_layernorm.weight
+- model.layers.51.post_attention_layernorm.weight
+- model.layers.52.self_attn.q_proj.weight
+- model.layers.52.self_attn.k_proj.weight
+- model.layers.52.self_attn.v_proj.weight
+- model.layers.52.self_attn.o_proj.weight
+- model.layers.52.mlp.gate_proj.weight
+- model.layers.52.mlp.up_proj.weight
+- model.layers.52.mlp.down_proj.weight
+- model.layers.52.input_layernorm.weight
+- model.layers.52.post_attention_layernorm.weight
+- model.layers.53.self_attn.q_proj.weight
+- model.layers.53.self_attn.k_proj.weight
+- model.layers.53.self_attn.v_proj.weight
+- model.layers.53.self_attn.o_proj.weight
+- model.layers.53.mlp.gate_proj.weight
+- model.layers.53.mlp.up_proj.weight
+- model.layers.53.mlp.down_proj.weight
+- model.layers.53.input_layernorm.weight
+- model.layers.53.post_attention_layernorm.weight
+- model.layers.54.self_attn.q_proj.weight
+- model.layers.54.self_attn.k_proj.weight
+- model.layers.54.self_attn.v_proj.weight
+- model.layers.54.self_attn.o_proj.weight
+- model.layers.54.mlp.gate_proj.weight
+- model.layers.54.mlp.up_proj.weight
+- model.layers.54.mlp.down_proj.weight
+- model.layers.54.input_layernorm.weight
+- model.layers.54.post_attention_layernorm.weight
+- model.layers.55.self_attn.q_proj.weight
+- model.layers.55.self_attn.k_proj.weight
+- model.layers.55.self_attn.v_proj.weight
+- model.layers.55.self_attn.o_proj.weight
+- model.layers.55.mlp.gate_proj.weight
+- model.layers.55.mlp.up_proj.weight
+- model.layers.55.mlp.down_proj.weight
+- model.layers.55.input_layernorm.weight
+- model.layers.55.post_attention_layernorm.weight
+- model.layers.56.self_attn.q_proj.weight
+- model.layers.56.self_attn.k_proj.weight
+- model.layers.56.self_attn.v_proj.weight
+- model.layers.56.self_attn.o_proj.weight
+- model.layers.56.mlp.gate_proj.weight
+- model.layers.56.mlp.up_proj.weight
+- model.layers.56.mlp.down_proj.weight
+- model.layers.56.input_layernorm.weight
+- model.layers.56.post_attention_layernorm.weight
+- model.layers.57.self_attn.q_proj.weight
+- model.layers.57.self_attn.k_proj.weight
+- model.layers.57.self_attn.v_proj.weight
+- model.layers.57.self_attn.o_proj.weight
+- model.layers.57.mlp.gate_proj.weight
+- model.layers.57.mlp.up_proj.weight
+- model.layers.57.mlp.down_proj.weight
+- model.layers.57.input_layernorm.weight
+- model.layers.57.post_attention_layernorm.weight
+- model.layers.58.self_attn.q_proj.weight
+- model.layers.58.self_attn.k_proj.weight
+- model.layers.58.self_attn.v_proj.weight
+- model.layers.58.self_attn.o_proj.weight
+- model.layers.58.mlp.gate_proj.weight
+- model.layers.58.mlp.up_proj.weight
+- model.layers.58.mlp.down_proj.weight
+- model.layers.58.input_layernorm.weight
+- model.layers.58.post_attention_layernorm.weight
+- model.layers.59.self_attn.q_proj.weight
+- model.layers.59.self_attn.k_proj.weight
+- model.layers.59.self_attn.v_proj.weight
+- model.layers.59.self_attn.o_proj.weight
+- model.layers.59.mlp.gate_proj.weight
+- model.layers.59.mlp.up_proj.weight
+- model.layers.59.mlp.down_proj.weight
+- model.layers.59.input_layernorm.weight
+- model.layers.59.post_attention_layernorm.weight
+- model.layers.60.self_attn.q_proj.weight
+- model.layers.60.self_attn.k_proj.weight
+- model.layers.60.self_attn.v_proj.weight
+- model.layers.60.self_attn.o_proj.weight
+- model.layers.60.mlp.gate_proj.weight
+- model.layers.60.mlp.up_proj.weight
+- model.layers.60.mlp.down_proj.weight
+- model.layers.60.input_layernorm.weight
+- model.layers.60.post_attention_layernorm.weight
+- model.layers.61.self_attn.q_proj.weight
+- model.layers.61.self_attn.k_proj.weight
+- model.layers.61.self_attn.v_proj.weight
+- model.layers.61.self_attn.o_proj.weight
+- model.layers.61.mlp.gate_proj.weight
+- model.layers.61.mlp.up_proj.weight
+- model.layers.61.mlp.down_proj.weight
+- model.layers.61.input_layernorm.weight
+- model.layers.61.post_attention_layernorm.weight
+- model.layers.62.self_attn.q_proj.weight
+- model.layers.62.self_attn.k_proj.weight
+- model.layers.62.self_attn.v_proj.weight
+- model.layers.62.self_attn.o_proj.weight
+- model.layers.62.mlp.gate_proj.weight
+- model.layers.62.mlp.up_proj.weight
+- model.layers.62.mlp.down_proj.weight
+- model.layers.62.input_layernorm.weight
+- model.layers.62.post_attention_layernorm.weight
+- model.layers.63.self_attn.q_proj.weight
+- model.layers.63.self_attn.k_proj.weight
+- model.layers.63.self_attn.v_proj.weight
+- model.layers.63.self_attn.o_proj.weight
+- model.layers.63.mlp.gate_proj.weight
+- model.layers.63.mlp.up_proj.weight
+- model.layers.63.mlp.down_proj.weight
+- model.layers.63.input_layernorm.weight
+- model.layers.63.post_attention_layernorm.weight
+- model.layers.64.self_attn.q_proj.weight
+- model.layers.64.self_attn.k_proj.weight
+- model.layers.64.self_attn.v_proj.weight
+- model.layers.64.self_attn.o_proj.weight
+- model.layers.64.mlp.gate_proj.weight
+- model.layers.64.mlp.up_proj.weight
+- model.layers.64.mlp.down_proj.weight
+- model.layers.64.input_layernorm.weight
+- model.layers.64.post_attention_layernorm.weight
+- model.layers.65.self_attn.q_proj.weight
+- model.layers.65.self_attn.k_proj.weight
+- model.layers.65.self_attn.v_proj.weight
+- model.layers.65.self_attn.o_proj.weight
+- model.layers.65.mlp.gate_proj.weight
+- model.layers.65.mlp.up_proj.weight
+- model.layers.65.mlp.down_proj.weight
+- model.layers.65.input_layernorm.weight
+- model.layers.65.post_attention_layernorm.weight
+- model.layers.66.self_attn.q_proj.weight
+- model.layers.66.self_attn.k_proj.weight
+- model.layers.66.self_attn.v_proj.weight
+- model.layers.66.self_attn.o_proj.weight
+- model.layers.66.mlp.gate_proj.weight
+- model.layers.66.mlp.up_proj.weight
+- model.layers.66.mlp.down_proj.weight
+- model.layers.66.input_layernorm.weight
+- model.layers.66.post_attention_layernorm.weight
+- model.layers.67.self_attn.q_proj.weight
+- model.layers.67.self_attn.k_proj.weight
+- model.layers.67.self_attn.v_proj.weight
+- model.layers.67.self_attn.o_proj.weight
+- model.layers.67.mlp.gate_proj.weight
+- model.layers.67.mlp.up_proj.weight
+- model.layers.67.mlp.down_proj.weight
+- model.layers.67.input_layernorm.weight
+- model.layers.67.post_attention_layernorm.weight
+- model.layers.68.self_attn.q_proj.weight
+- model.layers.68.self_attn.k_proj.weight
+- model.layers.68.self_attn.v_proj.weight
+- model.layers.68.self_attn.o_proj.weight
+- model.layers.68.mlp.gate_proj.weight
+- model.layers.68.mlp.up_proj.weight
+- model.layers.68.mlp.down_proj.weight
+- model.layers.68.input_layernorm.weight
+- model.layers.68.post_attention_layernorm.weight
+- model.layers.69.self_attn.q_proj.weight
+- model.layers.69.self_attn.k_proj.weight
+- model.layers.69.self_attn.v_proj.weight
+- model.layers.69.self_attn.o_proj.weight
+- model.layers.69.mlp.gate_proj.weight
+- model.layers.69.mlp.up_proj.weight
+- model.layers.69.mlp.down_proj.weight
+- model.layers.69.input_layernorm.weight
+- model.layers.69.post_attention_layernorm.weight
+- model.layers.70.self_attn.q_proj.weight
+- model.layers.70.self_attn.k_proj.weight
+- model.layers.70.self_attn.v_proj.weight
+- model.layers.70.self_attn.o_proj.weight
+- model.layers.70.mlp.gate_proj.weight
+- model.layers.70.mlp.up_proj.weight
+- model.layers.70.mlp.down_proj.weight
+- model.layers.70.input_layernorm.weight
+- model.layers.70.post_attention_layernorm.weight
+- model.layers.71.self_attn.q_proj.weight
+- model.layers.71.self_attn.k_proj.weight
+- model.layers.71.self_attn.v_proj.weight
+- model.layers.71.self_attn.o_proj.weight
+- model.layers.71.mlp.gate_proj.weight
+- model.layers.71.mlp.up_proj.weight
+- model.layers.71.mlp.down_proj.weight
+- model.layers.71.input_layernorm.weight
+- model.layers.71.post_attention_layernorm.weight
+- model.layers.72.self_attn.q_proj.weight
+- model.layers.72.self_attn.k_proj.weight
+- model.layers.72.self_attn.v_proj.weight
+- model.layers.72.self_attn.o_proj.weight
+- model.layers.72.mlp.gate_proj.weight
+- model.layers.72.mlp.up_proj.weight
+- model.layers.72.mlp.down_proj.weight
+- model.layers.72.input_layernorm.weight
+- model.layers.72.post_attention_layernorm.weight
+- model.layers.73.self_attn.q_proj.weight
+- model.layers.73.self_attn.k_proj.weight
+- model.layers.73.self_attn.v_proj.weight
+- model.layers.73.self_attn.o_proj.weight
+- model.layers.73.mlp.gate_proj.weight
+- model.layers.73.mlp.up_proj.weight
+- model.layers.73.mlp.down_proj.weight
+- model.layers.73.input_layernorm.weight
+- model.layers.73.post_attention_layernorm.weight
+- model.layers.74.self_attn.q_proj.weight
+- model.layers.74.self_attn.k_proj.weight
+- model.layers.74.self_attn.v_proj.weight
+- model.layers.74.self_attn.o_proj.weight
+- model.layers.74.mlp.gate_proj.weight
+- model.layers.74.mlp.up_proj.weight
+- model.layers.74.mlp.down_proj.weight
+- model.layers.74.input_layernorm.weight
+- model.layers.74.post_attention_layernorm.weight
+- model.layers.75.self_attn.q_proj.weight
+- model.layers.75.self_attn.k_proj.weight
+- model.layers.75.self_attn.v_proj.weight
+- model.layers.75.self_attn.o_proj.weight
+- model.layers.75.mlp.gate_proj.weight
+- model.layers.75.mlp.up_proj.weight
+- model.layers.75.mlp.down_proj.weight
+- model.layers.75.input_layernorm.weight
+- model.layers.75.post_attention_layernorm.weight
+- model.layers.76.self_attn.q_proj.weight
+- model.layers.76.self_attn.k_proj.weight
+- model.layers.76.self_attn.v_proj.weight
+- model.layers.76.self_attn.o_proj.weight
+- model.layers.76.mlp.gate_proj.weight
+- model.layers.76.mlp.up_proj.weight
+- model.layers.76.mlp.down_proj.weight
+- model.layers.76.input_layernorm.weight
+- model.layers.76.post_attention_layernorm.weight
+- model.layers.77.self_attn.q_proj.weight
+- model.layers.77.self_attn.k_proj.weight
+- model.layers.77.self_attn.v_proj.weight
+- model.layers.77.self_attn.o_proj.weight
+- model.layers.77.mlp.gate_proj.weight
+- model.layers.77.mlp.up_proj.weight
+- model.layers.77.mlp.down_proj.weight
+- model.layers.77.input_layernorm.weight
+- model.layers.77.post_attention_layernorm.weight
+- model.layers.78.self_attn.q_proj.weight
+- model.layers.78.self_attn.k_proj.weight
+- model.layers.78.self_attn.v_proj.weight
+- model.layers.78.self_attn.o_proj.weight
+- model.layers.78.mlp.gate_proj.weight
+- model.layers.78.mlp.up_proj.weight
+- model.layers.78.mlp.down_proj.weight
+- model.layers.78.input_layernorm.weight
+- model.layers.78.post_attention_layernorm.weight
+- model.layers.79.self_attn.q_proj.weight
+- model.layers.79.self_attn.k_proj.weight
+- model.layers.79.self_attn.v_proj.weight
+- model.layers.79.self_attn.o_proj.weight
+- model.layers.79.mlp.gate_proj.weight
+- model.layers.79.mlp.up_proj.weight
+- model.layers.79.mlp.down_proj.weight
+- model.layers.79.input_layernorm.weight
+- model.layers.79.post_attention_layernorm.weight
+- model.norm.weight
+- lm_head.weight
+nemo_config: {'mcore_gpt': True, 'micro_batch_size': 1, 'global_batch_size': 8, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 1, 'virtual_pipeline_model_parallel_size': None, 'encoder_seq_length': 8192, 'max_position_embeddings': 8192, 'num_layers': 80, 'hidden_size': 8192, 'ffn_hidden_size': 28672, 'num_attention_heads': 64, 'init_method_std': 0.02, 'use_scaled_init_method': True, 'hidden_dropout': 0.0, 'attention_dropout': 0.0, 'ffn_dropout': 0.0, 'kv_channels': None, 'apply_query_key_layer_scaling': True, 'normalization': 'rmsnorm', 'layernorm_epsilon': 1e-05, 'do_layer_norm_weight_decay': False, 'make_vocab_size_divisible_by': 128, 'pre_process': True, 'post_process': True, 'persist_layer_norm': True, 'bias': False, 'activation': 'fast-swiglu', 'headscale': False, 'transformer_block_type': 'pre_ln', 'openai_gelu': False, 'normalize_attention_scores': True, 'position_embedding_type': 'rope', 'rotary_percentage': 1.0, 'rotary_base': 500000.0, 'attention_type': 'multihead', 'share_embeddings_and_output_weights': False, 'overlap_p2p_comm': False, 'batch_p2p_comm': True, 'num_query_groups': 8, 'tokenizer': {'library': 'huggingface', 'type': '/work/u4005115/models/llama/Meta-Llama-3-70B-Instruct/', 'model': None, 'vocab_file': None, 'merge_file': None, 'delimiter': None, 'sentencepiece_legacy': False}, 'native_amp_init_scale': 4096, 'native_amp_growth_interval': 100, 'hysteresis': 2, 'fp32_residual_connection': False, 'fp16_lm_cross_entropy': False, 'megatron_amp_O2': False, 'grad_allreduce_chunk_size_mb': 125, 'grad_div_ar_fusion': True, 'gradient_accumulation_fusion': False, 'bias_activation_fusion': False, 'bias_dropout_add_fusion': False, 'masked_softmax_fusion': True, 'get_attention_mask_from_fusion': True, 'apply_rope_fusion': False, 'seed': 666, 'resume_from_checkpoint': None, 'use_cpu_initialization': True, 'onnx_safe': False, 'apex_transformer_log_level': 30, 'gradient_as_bucket_view': True, 'sync_batch_comm': False, 'activations_checkpoint_granularity': None, 'activations_checkpoint_method': None, 'activations_checkpoint_num_layers': None, 'num_micro_batches_with_partial_activation_checkpoints': None, 'activations_checkpoint_layers_per_pipeline': None, 'sequence_parallel': False, 'context_parallel_size': 1, 'transformer_engine': True, 'fp8': False, 'fp8_e4m3': False, 'fp8_hybrid': True, 'fp8_margin': 0, 'fp8_interval': 1, 'fp8_amax_history_len': 1024, 'fp8_amax_compute_algo': 'max', 'reduce_amax': True, 'use_emha': False, 'data': {'index_mapping_dir': None, 'data_impl': 'mmap', 'splits_string': '900,50,50', 'seq_length': '${model.encoder_seq_length}', 'skip_warmup': True, 'num_workers': 2, 'dataloader_type': 'single', 'reset_position_ids': False, 'reset_attention_mask': False, 'eod_mask_loss': False, 'validation_drop_last': True, 'no_seqlen_plus_one_input_tokens': False, 'pad_samples_to_global_batch_size': False, 'shuffle_documents': True}, 'nsys_profile': {'enabled': False, 'start_step': 10, 'end_step': 10, 'ranks': [0], 'gen_shape': False}, 'optim': {'name': 'fused_adam', 'lr': 2e-05, 'weight_decay': 0.01, 'betas': [0.9, 0.98], 'sched': {'name': 'CosineAnnealing', 'warmup_steps': 500, 'constant_steps': 50000, 'min_lr': 2e-06}}, 'precision': '16-mixed'}
+GPU available: True (cuda), used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[NeMo W 2024-04-23 08:50:34 nemo_logging:349] /usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/setup.py:176: PossibleUserWarning: GPU available but not used. Set `accelerator` and `devices` using `Trainer(accelerator='gpu', devices=8)`.
+      rank_zero_warn(
+    
+converting layer 0
+done layer 0
+converting layer 1
+done layer 1
+converting layer 2
+done layer 2
+converting layer 3
+done layer 3
+converting layer 4
+done layer 4
+converting layer 5
+done layer 5
+converting layer 6
+done layer 6
+converting layer 7
+done layer 7
+converting layer 8
+done layer 8
+converting layer 9
+done layer 9
+converting layer 10
+done layer 10
+converting layer 11
+done layer 11
+converting layer 12
+done layer 12
+converting layer 13
+done layer 13
+converting layer 14
+done layer 14
+converting layer 15
+done layer 15
+converting layer 16
+done layer 16
+converting layer 17
+done layer 17
+converting layer 18
+done layer 18
+converting layer 19
+done layer 19
+converting layer 20
+done layer 20
+converting layer 21
+done layer 21
+converting layer 22
+done layer 22
+converting layer 23
+done layer 23
+converting layer 24
+done layer 24
+converting layer 25
+done layer 25
+converting layer 26
+done layer 26
+converting layer 27
+done layer 27
+converting layer 28
+done layer 28
+converting layer 29
+done layer 29
+converting layer 30
+done layer 30
+converting layer 31
+done layer 31
+converting layer 32
+done layer 32
+converting layer 33
+done layer 33
+converting layer 34
+done layer 34
+converting layer 35
+done layer 35
+converting layer 36
+done layer 36
+converting layer 37
+done layer 37
+converting layer 38
+done layer 38
+converting layer 39
+done layer 39
+converting layer 40
+done layer 40
+converting layer 41
+done layer 41
+converting layer 42
+done layer 42
+converting layer 43
+done layer 43
+converting layer 44
+done layer 44
+converting layer 45
+done layer 45
+converting layer 46
+done layer 46
+converting layer 47
+done layer 47
+converting layer 48
+done layer 48
+converting layer 49
+done layer 49
+converting layer 50
+done layer 50
+converting layer 51
+done layer 51
+converting layer 52
+done layer 52
+converting layer 53
+done layer 53
+converting layer 54
+done layer 54
+converting layer 55
+done layer 55
+converting layer 56
+done layer 56
+converting layer 57
+done layer 57
+converting layer 58
+done layer 58
+converting layer 59
+done layer 59
+converting layer 60
+done layer 60
+converting layer 61
+done layer 61
+converting layer 62
+done layer 62
+converting layer 63
+done layer 63
+converting layer 64
+done layer 64
+converting layer 65
+done layer 65
+converting layer 66
+done layer 66
+converting layer 67
+done layer 67
+converting layer 68
+done layer 68
+converting layer 69
+done layer 69
+converting layer 70
+done layer 70
+converting layer 71
+done layer 71
+converting layer 72
+done layer 72
+converting layer 73
+done layer 73
+converting layer 74
+done layer 74
+converting layer 75
+done layer 75
+converting layer 76
+done layer 76
+converting layer 77
+done layer 77
+converting layer 78
+done layer 78
+converting layer 79
+done layer 79
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: pipeline_model_parallel_split_rank in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+[NeMo I 2024-04-23 08:51:03 megatron_init:251] Rank 0 has data parallel group : [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:257] Rank 0 has combined group of data parallel and context parallel : [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:262] All data parallel group ranks with context parallel combined: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:265] Ranks 0 has data parallel rank: 0
+[NeMo I 2024-04-23 08:51:03 megatron_init:282] Rank 0 has context parallel group: [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:285] All context parallel group ranks: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:286] Ranks 0 has context parallel rank: 0
+[NeMo I 2024-04-23 08:51:03 megatron_init:297] Rank 0 has model parallel group: [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:298] All model parallel group ranks: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:308] Rank 0 has tensor model parallel group: [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:312] All tensor model parallel group ranks: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:313] Rank 0 has tensor model parallel rank: 0
+[NeMo I 2024-04-23 08:51:03 megatron_init:342] Rank 0 has pipeline model parallel group: [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:354] Rank 0 has embedding group: [0]
+[NeMo I 2024-04-23 08:51:03 megatron_init:360] All pipeline model parallel group ranks: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:361] Rank 0 has pipeline model parallel rank 0
+[NeMo I 2024-04-23 08:51:03 megatron_init:362] All embedding group ranks: [[0]]
+[NeMo I 2024-04-23 08:51:03 megatron_init:363] Rank 0 has embedding rank: 0
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: pipeline_model_parallel_split_rank in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo I 2024-04-23 08:51:03 tokenizer_utils:182] Getting HuggingFace AutoTokenizer with pretrained_model_name: /work/u4005115/models/llama/Meta-Llama-3-70B-Instruct/
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[NeMo I 2024-04-23 08:51:03 megatron_base_model:544] Padded vocab_size: 128256, original vocab_size: 128256, dummy tokens: 0.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: expert_model_parallel_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_overlap in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_ag in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_split_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_atomic_rs in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: tp_comm_bulk_dgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: finalize_model_grads_func in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: pipeline_model_parallel_split_rank in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_num_layers in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: _cpu_offloading_context in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_activations in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: cpu_offloading_weights in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:1109] The model: MegatronGPTModel() does not have field.name: barrier_with_L1_time in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: add_qkv_bias in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: num_moe_experts in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: rotary_interleaved in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: window_size in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: memory_efficient_layer_norm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: fp8_wgrad in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: clone_scatter_output_in_embedding in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_router_load_balancing_type in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_router_topk in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_grouped_gemm in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_aux_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_z_loss_coeff in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_input_jitter_eps in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+[NeMo W 2024-04-23 08:51:03 megatron_base_model:516] The model: MegatronGPTModel() does not have field.name: moe_token_dropping in its cfg. Add this key to cfg or config_mapping to make to make it configurable.
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=gloo
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+[NeMo I 2024-04-23 09:12:00 convert_llama_hf_to_nemo:283] NeMo model saved to: /home/u9824269/LLM/llama3/train/llama3-70b-16-mixed.nemo
+END TIME: 二  4月 23 09:12:11 CST 2024

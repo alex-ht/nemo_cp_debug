@@ -1,0 +1,185 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.02 (build 82611821)
+PyTorch Version 2.3.0a0+ebedce2
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+ERROR: This container was built for NVIDIA Driver Release 545.23 or later, but
+       version 470.161.03 was detected and compatibility mode is UNAVAILABLE.
+
+       [[]]
+
+gn1223:20599:20599 [3] NCCL INFO cudaDriverVersion 12030
+gn1223:20599:20599 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn1223:20599:20599 [3] NCCL INFO Bootstrap : Using ib0:10.100.12.23<0>
+gn1223:20599:20599 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v7 symbol.
+gn1223:20599:20599 [3] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v6 (v6)
+gn1223:20599:20599 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v7 symbol.
+gn1223:20599:20599 [3] NCCL INFO NET/Plugin: Loaded coll plugin SHARP (v6)
+gn1223:20599:968 [3] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+gn1223:20599:968 [3] NCCL INFO P2P plugin IBext
+gn1223:20599:968 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+gn1223:20599:968 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB/SHARP [RO]; OOB ib0:10.100.12.23<0>
+gn1223:20599:968 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:968 [3] NCCL INFO Using network IBext
+gn1223:20599:968 [3] NCCL INFO comm 0x55851818e1d0 rank 115 nranks 128 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xc30115f52475687c - Init START
+gn1223:20599:968 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gn1223:20599:968 [3] NCCL INFO Trees [0] 117/-1/-1->115->114 [1] 117/-1/-1->115->114
+gn1223:20599:968 [3] NCCL INFO P2P Chunksize set to 131072
+gn1223:20599:968 [3] NCCL INFO Channel 00/0 : 115[3] -> 114[2] via P2P/CUMEM
+gn1223:20599:968 [3] NCCL INFO Channel 01/0 : 115[3] -> 114[2] via P2P/CUMEM
+gn1223:20599:968 [3] NCCL INFO Connected all rings
+gn1223:20599:968 [3] NCCL INFO Channel 00/0 : 115[3] -> 117[5] via P2P/CUMEM
+gn1223:20599:968 [3] NCCL INFO Channel 01/0 : 115[3] -> 117[5] via P2P/CUMEM
+gn1223:20599:968 [3] NCCL INFO Connected all trees
+gn1223:20599:968 [3] NCCL INFO threadThresholds 8/8/64 | 1024/8/64 | 512 | 512
+gn1223:20599:968 [3] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1223:20599:968 [3] NCCL INFO Channel 00/1 : 115[3] -> 116[4] via P2P/indirect/117[5]
+gn1223:20599:968 [3] NCCL INFO Channel 01/1 : 115[3] -> 116[4] via P2P/indirect/117[5]
+gn1223:20599:968 [3] NCCL INFO Channel 00/1 : 115[3] -> 118[6] via P2P/indirect/112[0]
+gn1223:20599:968 [3] NCCL INFO Channel 01/1 : 115[3] -> 118[6] via P2P/indirect/112[0]
+gn1223:20599:968 [3] NCCL INFO Channel 00/1 : 115[3] -> 119[7] via P2P/indirect/113[1]
+gn1223:20599:968 [3] NCCL INFO Channel 01/1 : 115[3] -> 119[7] via P2P/indirect/113[1]
+gn1223:20599:968 [3] NCCL INFO comm 0x55851818e1d0 rank 115 nranks 128 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xc30115f52475687c - Init COMPLETE
+gn1223:20599:7076 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:7076 [3] NCCL INFO Using network IBext
+gn1223:20599:7076 [3] NCCL INFO comm 0x55851acabb30 rank 27 nranks 32 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x74bb4c244197332c - Init START
+gn1223:20599:7076 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gn1223:20599:7076 [3] NCCL INFO Trees [0] 29/-1/-1->27->26 [1] 29/-1/-1->27->26
+gn1223:20599:7076 [3] NCCL INFO P2P Chunksize set to 131072
+gn1223:20599:7076 [3] NCCL INFO Channel 00/0 : 27[3] -> 26[2] via P2P/CUMEM
+gn1223:20599:7076 [3] NCCL INFO Channel 01/0 : 27[3] -> 26[2] via P2P/CUMEM
+gn1223:20599:7076 [3] NCCL INFO Connected all rings
+gn1223:20599:7076 [3] NCCL INFO Channel 00/0 : 27[3] -> 29[5] via P2P/CUMEM
+gn1223:20599:7076 [3] NCCL INFO Channel 01/0 : 27[3] -> 29[5] via P2P/CUMEM
+gn1223:20599:7076 [3] NCCL INFO Connected all trees
+gn1223:20599:7076 [3] NCCL INFO threadThresholds 8/8/64 | 256/8/64 | 512 | 512
+gn1223:20599:7076 [3] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1223:20599:7076 [3] NCCL INFO Channel 00/1 : 27[3] -> 28[4] via P2P/indirect/29[5]
+gn1223:20599:7076 [3] NCCL INFO Channel 01/1 : 27[3] -> 28[4] via P2P/indirect/29[5]
+gn1223:20599:7076 [3] NCCL INFO Channel 00/1 : 27[3] -> 30[6] via P2P/indirect/24[0]
+gn1223:20599:7076 [3] NCCL INFO Channel 01/1 : 27[3] -> 30[6] via P2P/indirect/24[0]
+gn1223:20599:7076 [3] NCCL INFO Channel 00/1 : 27[3] -> 31[7] via P2P/indirect/25[1]
+gn1223:20599:7076 [3] NCCL INFO Channel 01/1 : 27[3] -> 31[7] via P2P/indirect/25[1]
+gn1223:20599:7076 [3] NCCL INFO comm 0x55851acabb30 rank 27 nranks 32 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x74bb4c244197332c - Init COMPLETE
+gn1223:20599:8201 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:8201 [3] NCCL INFO Using network IBext
+gn1223:20599:8201 [3] NCCL INFO comm 0x55851bb68260 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x4a2201b12edfba8a - Init START
+gn1223:20599:8201 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] 1/-1/-1->3->-1
+gn1223:20599:8201 [3] NCCL INFO P2P Chunksize set to 131072
+gn1223:20599:8201 [3] NCCL INFO Channel 00/0 : 2[3] -> 3[3] [receive] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Channel 01/0 : 2[3] -> 3[3] [receive] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[3] [send] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[3] [send] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Connected all rings
+gn1223:20599:8201 [3] NCCL INFO Channel 01/0 : 1[3] -> 3[3] [receive] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Channel 01/0 : 3[3] -> 1[3] [send] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[3] [send] via NET/IBext/0
+gn1223:20599:8201 [3] NCCL INFO Connected all trees
+gn1223:20599:8201 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gn1223:20599:8201 [3] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1223:20599:8201 [3] NCCL INFO comm 0x55851bb68260 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x4a2201b12edfba8a - Init COMPLETE
+gn1223:20599:8348 [3] NCCL INFO Channel 00/1 : 2[3] -> 3[3] [receive] via NET/IBext/0/Shared
+gn1223:20599:8348 [3] NCCL INFO Channel 01/1 : 2[3] -> 3[3] [receive] via NET/IBext/0/Shared
+gn1223:20599:9729 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:9729 [3] NCCL INFO Using network IBext
+gn1223:20599:9729 [3] NCCL INFO comm 0x55851c923000 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x99310f9caeda0bea - Init START
+gn1223:20599:9729 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gn1223:20599:9729 [3] NCCL INFO Trees [0] 2/-1/-1->3->0 [1] 2/-1/-1->3->0 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] 5/-1/-1->3->1 [5] 1/-1/-1->3->5 [6] 2/-1/-1->3->0 [7] 2/-1/-1->3->0 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] 5/-1/-1->3->1 [11] 1/-1/-1->3->5
+gn1223:20599:9729 [3] NCCL INFO P2P Chunksize set to 524288
+gn1223:20599:9729 [3] NCCL INFO Channel 04/0 : 3[3] -> 5[5] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 10/0 : 3[3] -> 5[5] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 05/0 : 3[3] -> 1[1] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 11/0 : 3[3] -> 1[1] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Connected all rings
+gn1223:20599:9729 [3] NCCL INFO Channel 05/0 : 3[3] -> 5[5] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 11/0 : 3[3] -> 5[5] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM
+gn1223:20599:9729 [3] NCCL INFO Connected all trees
+gn1223:20599:9729 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gn1223:20599:9729 [3] NCCL INFO 12 coll channels, 0 nvls channels, 16 p2p channels, 2 p2p channels per peer
+gn1223:20599:9729 [3] NCCL INFO Channel 08/1 : 3[3] -> 4[4] via P2P/indirect/5[5]
+gn1223:20599:9729 [3] NCCL INFO Channel 09/1 : 3[3] -> 4[4] via P2P/indirect/5[5]
+gn1223:20599:9729 [3] NCCL INFO Channel 12/1 : 3[3] -> 6[6] via P2P/indirect/0[0]
+gn1223:20599:9729 [3] NCCL INFO Channel 13/1 : 3[3] -> 6[6] via P2P/indirect/0[0]
+gn1223:20599:9729 [3] NCCL INFO Channel 02/1 : 3[3] -> 7[7] via P2P/indirect/1[1]
+gn1223:20599:9729 [3] NCCL INFO Channel 03/1 : 3[3] -> 7[7] via P2P/indirect/1[1]
+gn1223:20599:9729 [3] NCCL INFO comm 0x55851c923000 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId 3e000 commId 0x99310f9caeda0bea - Init COMPLETE
+gn1223:20599:10577 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:10577 [3] NCCL INFO Using network IBext
+gn1223:20599:10577 [3] NCCL INFO comm 0x55852e78bab0 rank 2 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xa42c59563457da80 - Init START
+gn1223:20599:10577 [3] NCCL INFO Trees [0] 1/3/-1->2->0 [1] -1/-1/-1->2->1
+gn1223:20599:10577 [3] NCCL INFO P2P Chunksize set to 131072
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 1[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 01/0 : 1[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 2[3] -> 3[3] [send] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 01/0 : 2[3] -> 3[3] [send] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Connected all rings
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 0[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 2[3] -> 0[3] [send] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 00/0 : 2[3] -> 1[3] [send] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Channel 01/0 : 2[3] -> 1[3] [send] via NET/IBext/0
+gn1223:20599:10577 [3] NCCL INFO Connected all trees
+gn1223:20599:10577 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gn1223:20599:10577 [3] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1223:20599:10577 [3] NCCL INFO comm 0x55852e78bab0 rank 2 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xa42c59563457da80 - Init COMPLETE
+gn1223:20599:10864 [3] NCCL INFO Channel 00/1 : 3[3] -> 2[3] [send] via NET/IBext/0/Shared
+gn1223:20599:10864 [3] NCCL INFO Channel 01/1 : 3[3] -> 2[3] [send] via NET/IBext/0/Shared
+gn1223:20599:11186 [3] NCCL INFO Using non-device net plugin version 0
+gn1223:20599:11186 [3] NCCL INFO Using network IBext
+gn1223:20599:11186 [3] NCCL INFO comm 0x55852e85f020 rank 2 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xf93cd01811ef2440 - Init START
+gn1223:20599:11186 [3] NCCL INFO Trees [0] 1/3/-1->2->0 [1] -1/-1/-1->2->1
+gn1223:20599:11186 [3] NCCL INFO P2P Chunksize set to 131072
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 1[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 01/0 : 1[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 2[3] -> 3[3] [send] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 01/0 : 2[3] -> 3[3] [send] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Connected all rings
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 0[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 2[3] -> 0[3] [send] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[3] [receive] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 00/0 : 2[3] -> 1[3] [send] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Channel 01/0 : 2[3] -> 1[3] [send] via NET/IBext/0
+gn1223:20599:11186 [3] NCCL INFO Connected all trees
+gn1223:20599:11186 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gn1223:20599:11186 [3] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+gn1223:20599:11186 [3] NCCL INFO comm 0x55852e85f020 rank 2 nranks 4 cudaDev 3 nvmlDev 3 busId 3e000 commId 0xf93cd01811ef2440 - Init COMPLETE

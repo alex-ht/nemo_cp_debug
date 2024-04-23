@@ -1,0 +1,210 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.39.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1713835237.0
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 49
+      - 50
+      - 51
+      - 53
+      - 55
+      - 71
+      - 103
+      2:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 49
+      - 50
+      - 51
+      - 53
+      - 55
+      - 71
+      - 103
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      6: 4.39.3
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+name:
+  desc: null
+  value: megatron_gpt_sft
+trainer:
+  desc: null
+  value:
+    num_nodes: 16
+    devices: -1
+    accelerator: gpu
+    precision: 16-mixed
+    logger: false
+    enable_checkpointing: false
+    use_distributed_sampler: false
+    max_time: null
+    max_epochs: 1
+    max_steps: -1
+    sft:
+      max_epochs: 1
+      max_steps: -1
+      val_check_interval: 12
+      save_interval: 12
+      limit_val_batches: 1
+      gradient_clip_val: 1.0
+exp_manager:
+  desc: null
+  value:
+    explicit_log_dir: /home/u9824269/LLM/llama3/train/result_dir
+    exp_dir: null
+    name: megatron_gpt_sft
+    create_wandb_logger: true
+    wandb_logger_kwargs:
+      project: llama3-cp-debug
+      name: dolly_sft_run_tp8_cp
+    resume_if_exists: true
+    resume_ignore_no_checkpoint: true
+    create_checkpoint_callback: true
+    checkpoint_callback_params:
+      monitor: validation_loss
+      save_top_k: 5
+      mode: min
+      save_nemo_on_train_end: true
+      filename: megatron_gpt_sft--{validation_loss:.3f}-{step}-{consumed_samples}-{epoch}
+      model_parallel_size: 8
+      save_best_model: false
+model:
+  desc: null
+  value:
+    seed: 1234
+    tensor_model_parallel_size: 8
+    pipeline_model_parallel_size: 4
+    restore_from_path: /home/u9824269/LLM/llama3/train/llama3-70b-16-mixed.nemo
+    resume_from_checkpoint: null
+    save_nemo_on_validation_end: true
+    sync_batch_comm: false
+    megatron_amp_O2: true
+    encoder_seq_length: 8192
+    sequence_parallel: true
+    activations_checkpoint_granularity: selective
+    activations_checkpoint_method: uniform
+    activations_checkpoint_num_layers: null
+    activations_checkpoint_layers_per_pipeline: null
+    answer_only_loss: true
+    gradient_as_bucket_view: false
+    seq_len_interpolation_factor: null
+    use_flash_attention: null
+    hidden_dropout: 0.0
+    attention_dropout: 0.0
+    ffn_dropout: 0.0
+    peft:
+      peft_scheme: none
+      restore_from_path: null
+      lora_tuning:
+        target_modules:
+        - attention_qkv
+        adapter_dim: 32
+        adapter_dropout: 0.0
+        column_init_method: xavier
+        row_init_method: zero
+        layer_selection: null
+        weight_tying: false
+        position_embedding_strategy: null
+    data:
+      chat: false
+      chat_prompt_tokens:
+        system_turn_start: "\0"
+        turn_start: "\x11"
+        label_start: "\x12"
+        end_of_turn: '
+
+          '
+        end_of_name: '
+
+          '
+      sample: false
+      num_workers: 0
+      dataloader_type: single
+      train_ds:
+        file_path: /home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl
+        global_batch_size: 8
+        micro_batch_size: 1
+        shuffle: true
+        memmap_workers: null
+        max_seq_length: 8192
+        min_seq_length: 1
+        drop_last: true
+        label_key: output
+        add_eos: true
+        add_sep: false
+        add_bos: true
+        truncation_field: input
+        index_mapping_dir: null
+        prompt_template: '<|start_header_id|>user<|end_header_id|>
+
+
+          {input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+
+          {output}'
+        hf_dataset: false
+        truncation_method: right
+      validation_ds:
+        file_path: /home/u9824269/LLM/nemo/databricks-dolly-15k-output.jsonl
+        global_batch_size: 128
+        micro_batch_size: 1
+        shuffle: false
+        memmap_workers: null
+        max_seq_length: 8192
+        min_seq_length: 1
+        drop_last: true
+        label_key: output
+        add_eos: true
+        add_sep: false
+        add_bos: true
+        truncation_field: input
+        index_mapping_dir: null
+        prompt_template: '<|start_header_id|>user<|end_header_id|>
+
+
+          {input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+
+          {output}'
+        hf_dataset: false
+        truncation_method: right
+        output_original_text: true
+    optim:
+      name: distributed_fused_adam
+      lr: 5.0e-06
+      weight_decay: 0.01
+      betas:
+      - 0.9
+      - 0.98
+      sched:
+        name: CosineAnnealing
+        warmup_steps: 10
+        constant_steps: 1000
+        min_lr: 9.0e-07
+    context_parallel_size: 2
+    precision: 16-mixed

@@ -1,0 +1,73 @@
+[3;J[H[2Jsrun: error: gn1201: task 60: Exited with exit code 1
+srun: Terminating job step 591883.0
+srun: error: gn1125: task 38: Exited with exit code 1
+srun: error: gn1130: task 52: Exited with exit code 1
+srun: error: gn1201: task 62: Exited with exit code 1
+srun: error: gn1125: task 39: Exited with exit code 1
+srun: error: gn1130: tasks 50,54: Exited with exit code 1
+srun: error: gn1125: task 36: Exited with exit code 1
+srun: error: gn1122: tasks 10,13: Terminated
+srun: error: gn1201: task 63: Exited with exit code 1
+srun: error: gn1123: tasks 18-21: Terminated
+srun: error: gn1124: tasks 26-29: Terminated
+srun: error: gn1122: tasks 11-12: Terminated
+srun: error: gn1125: task 34: Exited with exit code 1
+srun: error: gn1201: task 58: Exited with exit code 1
+srun: error: gn1222: task 110: Terminated
+srun: error: gn1130: task 55: Exited with exit code 1
+srun: error: gn1125: task 37: Exited with exit code 1
+srun: error: gn1124: task 31: Terminated
+srun: error: gn1222: tasks 105-106,109,111: Terminated
+srun: error: gn1201: task 61: Exited with exit code 1
+srun: error: gn1101: tasks 2-5: Terminated
+srun: error: gn1122: task 9: Terminated
+srun: error: gn1223: tasks 114-115: Terminated
+srun: error: gn1123: task 23: Terminated
+srun: error: gn1125: task 33: Exited with exit code 1
+srun: error: gn1222: task 108: Terminated
+srun: error: gn1129: task 43: Terminated
+srun: error: gn1130: tasks 49,53: Exited with exit code 1
+srun: error: gn1124: task 30: Terminated
+srun: error: gn1125: task 32: Exited with exit code 1
+srun: error: gn1201: tasks 56,59: Exited with exit code 1
+srun: error: gn1122: tasks 14-15: Terminated
+srun: error: gn1129: task 44: Terminated
+srun: error: gn1123: task 22: Terminated
+srun: error: gn1223: tasks 113,116-119: Terminated
+srun: error: gn1125: task 35: Exited with exit code 1
+srun: error: gn1123: task 17: Terminated
+srun: error: gn1130: task 48: Exited with exit code 1
+srun: error: gn1201: task 57: Exited with exit code 1
+srun: error: gn1224: task 126: Terminated
+srun: error: gn1124: task 25: Terminated
+srun: error: gn1101: task 6: Terminated
+srun: error: gn1129: tasks 42,45: Terminated
+srun: error: gn1130: task 51: Exited with exit code 1
+srun: error: gn1208: task 92: Terminated
+srun: error: gn1129: task 46: Terminated
+srun: error: gn1101: task 1: Terminated
+srun: error: gn1205: task 65: Terminated
+srun: error: gn1207: task 84: Terminated
+srun: error: gn1129: task 40: Terminated
+srun: error: gn1224: tasks 120,122: Terminated
+srun: error: gn1205: tasks 66-71: Terminated
+srun: error: gn1129: tasks 41,47: Terminated
+srun: error: gn1208: task 89: Terminated
+srun: error: gn1124: task 24: Terminated
+srun: error: gn1122: task 8: Terminated
+srun: error: gn1224: task 127: Terminated
+srun: error: gn1123: task 16: Terminated
+srun: error: gn1207: task 83: Terminated
+srun: error: gn1224: tasks 121,123,125: Terminated
+srun: error: gn1208: tasks 91,93: Terminated
+srun: error: gn1206: tasks 72-79: Terminated
+srun: error: gn1208: tasks 90,94-95: Terminated
+srun: error: gn1221: tasks 96-103: Terminated
+srun: error: gn1222: tasks 104,107: Terminated
+srun: error: gn1223: task 112: Terminated
+srun: error: gn1101: tasks 0,7: Terminated
+srun: error: gn1205: task 64: Terminated
+srun: error: gn1207: tasks 80-82,85-87: Terminated
+srun: error: gn1224: task 124: Terminated
+srun: error: gn1208: task 88: Terminated
+srun: Force Terminated job step 591883.0
